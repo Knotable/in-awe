@@ -79,7 +79,8 @@ function create_post_type() {
       'supports' => array(
       	'thumbnail',
       	'title',
-      	'editor'
+      	'editor',
+        'custom-fields'
       	)
     )
   );

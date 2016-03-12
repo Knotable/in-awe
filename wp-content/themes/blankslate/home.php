@@ -122,6 +122,14 @@
 		</div>
 	</section>
 </div>
+<script>
+    jQuery(document).scroll(function(){
+        if(jQuery('#head_menu').offset()['top'] < (jQuery('#home').height() - jQuery('#head_menu').height() ) )
+            jQuery('#head_menu').css('background','none');
+        else
+            jQuery('#head_menu').css('background','#1b3149');
+    });
+</script>
 	</div>
 </body>
 </html>
