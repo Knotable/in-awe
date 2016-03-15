@@ -49,9 +49,28 @@
 <div class="container white">
 	<section id="slider" class="">
 		<div class="experience">
-			<h3>Stephanie Diamond</h3>
-			<span>Listings Project</span>
-			<p class="comment">it was an amazing experience I am teeming with inspiration and knowledge I never knew existed! I am so impressed with the community you gathered and the flow of the whole day. Everyone was interesting, passionate and informative.</p>
+			<ul class="bxslider">
+				<li>
+					<h3>Stephanie Diamond</h3>
+					<span>Listings Project</span>
+					<p class="comment">it was an amazing experience I am teeming with inspiration and knowledge I never knew existed! I am so impressed with the community you gathered and the flow of the whole day. Everyone was interesting, passionate and informative.</p>	
+				</li>
+				<li>
+					<h3>Stephanie Diamond</h3>
+					<span>Listings Project</span>
+					<p class="comment">it was an amazing experience I am teeming with inspiration and knowledge I never knew existed! I am so impressed with the community you gathered and the flow of the whole day. Everyone was interesting, passionate and informative.</p>	
+				</li>
+				<li>
+					<h3>Stephanie Diamond</h3>
+					<span>Listings Project</span>
+					<p class="comment">it was an amazing experience I am teeming with inspiration and knowledge I never knew existed! I am so impressed with the community you gathered and the flow of the whole day. Everyone was interesting, passionate and informative.</p>	
+				</li>
+				<li>
+					<h3>Stephanie Diamond</h3>
+					<span>Listings Project</span>
+					<p class="comment">it was an amazing experience I am teeming with inspiration and knowledge I never knew existed! I am so impressed with the community you gathered and the flow of the whole day. Everyone was interesting, passionate and informative.</p>	
+				</li>
+			</ul>
 		</div>
 	</section>
 </div>
@@ -98,11 +117,32 @@
 	<section id="partnering" class="">
 		<h2>We are partnering with these amazing companies</h2>
 		<div class="partners">
-			<?php for($i = 3;$i<=17;$i++){ if( $i==8 || $i==14 ) continue; ?>
+			<?php 
+			$partners = array();
+			for($i = 3;$i<=17;$i++){ if( $i==8 || $i==14 ) continue; 
+					$partners[] = $i;
+				?>
+
+			<?php } 
+			$partner_group = 1;
+			$count = 0;
+			foreach($partners as $key =>$partner){
+				if($partner_group == 1){
+					$partner_group = 0;
+					echo "<div class='partner_row'>";
+				} ?>
 				<div class="partner">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/partners_<?php echo sprintf("%02d", $i); ?>.png">
+					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/partners_<?php echo sprintf("%02d", $partner); ?>.png">
 				</div>
-			<?php } ?>
+				<?php
+				$count ++;
+				if($count ==5 || !isset($partners[$key+1] )){
+					$partner_group = 1;
+					echo "</div>";
+					$count = 0;
+				}
+			}
+			?>
 		</div>
 	</section>
 </div>
@@ -146,6 +186,7 @@
 		</div>
 	</section>
 </div>
+<script src="<?php echo get_template_directory_uri();?>/js/jquery.bxslider/jquery.bxslider.min.js"></script>
 <script>
     jQuery(document).scroll(function(){
         if(jQuery('#head_menu').offset()['top'] < (jQuery('#home').height() - jQuery('#head_menu').height() ) )
@@ -153,6 +194,14 @@
         else
             jQuery('#head_menu').css('background','#1b3149');
     });
+
+    jQuery(document).ready(function(){
+    	jQuery('.bxslider').bxSlider({
+    		auto:true
+		});
+    });
+
+
 </script>
 	</div>
 </body>

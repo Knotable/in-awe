@@ -15,6 +15,9 @@ BlankSlate is distributed under the terms of the GNU GPL
 */
 
 @import url(https://fonts.googleapis.com/css?family=Varela+Round|Fredoka+One);
+/*@import url('css/980.css');
+@import url('css/800.css');
+@import url('css/480.css');*/
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
 .sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
@@ -42,6 +45,10 @@ body{
 
 #menu li{
 	list-style: none;
+}
+
+#contact{
+    padding-bottom: 80px;
 }
 
 #home, #contact{
@@ -79,6 +86,7 @@ p{
 	width: 100%;
 	margin: auto;
 	position: relative;
+	overflow: hidden;
 }
 
 .scheduler_container{
@@ -236,7 +244,7 @@ a.subscribe, #contact .subscribe_form button, .subscribe_form_button button, #co
 }
 
 #slider{
-	padding: 50px 0;
+	padding: 80px 0;
 }
 #container h2{
 	font-size: 30px;
@@ -327,6 +335,7 @@ p.subtitle{
 	border-radius: 90px;
 	display: block;
     margin: 40px auto 30px auto;
+    width: 80%;
 }
 
 .speakers_content p.name{
@@ -350,6 +359,7 @@ p.subtitle{
 	margin: 0 1% 12px 1%;
 	float: left;
 	width: 22%;
+	height: 340px;
 }
 
 .speakers_content p{
@@ -407,10 +417,9 @@ section{
     height: 34px;
 }
 
-.partner{
-	width: 20%;
-	float: left;
-    margin: 40px auto 30px auto;
+.partner {
+    width: 20%;
+    display: inline-block;
 }
 
 .partner img {
@@ -420,6 +429,7 @@ section{
 #venue{
 	padding-bottom: 100px;
 }
+
 .venue_image{
 	position: absolute;
 	right: 0;
@@ -437,7 +447,7 @@ section{
 }
 
 .venue{
-	width: 50%;
+	width: 45%;
     text-align: left;
 }
 
@@ -507,3 +517,154 @@ section{
 .socialnetworks a.facebook{}
 .socialnetworks a.twitter{background-position: -45px 0;}
 .socialnetworks a.instagram{background-position: -92px 0;}
+
+.partners{
+	display: table;
+    width: 100%;
+}
+
+.partner_row {
+    display: table-row;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/*@media screen and (min-width: 480px) {
+	.venue{
+		width: 40%;
+	}
+}*/
+
+@media screen and (max-width: 1200px) {
+		.venue{
+		width: 50% !important;
+	}
+
+	.venue_image {
+	    right: -30%;
+	    bottom: 0;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.venue{
+		width: 50% !important;
+	}
+
+	.venue_image {
+	    right: -30%;
+	    bottom: 0;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	.description h1{
+		font-size: 12vw !important;
+	}
+
+	#home{
+		padding-top: 0px;
+	}
+
+	p.subtitle{font-size: 3vw !important;}
+	#contact .subscribe_form form div{
+		display: block;
+		margin: 10px;
+	}
+
+	#contact .subscribe_form form{
+		margin: auto;
+	}
+
+	#contact .subscribe_form input{
+		text-align: center;
+	}
+
+	#contact .subscribe_form{
+		margin: 20px;
+	}
+
+	#contact .subscribe_form {
+		padding-bottom: 15px;
+	}
+
+
+
+	#schedule .hour{
+		width: 100%;
+		text-align: left;
+		background: url(img/point.png) no-repeat;
+		background-position: 15px;
+	}
+
+	#schedule .activities{
+		width: 100%;
+		text-align: justify;
+		margin-left: 41px;
+		padding-left: 10px;
+		border: none;
+	}
+	#schedule .activities span{
+		background: none;
+	}
+
+	.speakers_content .cell{
+		width: 30%;
+		margin: 0 2% 12px 1%;
+	}
+
+	.features{
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+	    -moz-column-count: 1; /* Firefox */
+	    column-count: 1;
+	    -webkit-column-gap: 1; /* Chrome, Safari, Opera */
+	    -moz-column-gap: 1; /* Firefox */
+	    column-gap: 1;
+	}
+
+	.feature{
+		margin: 50px auto;
+		height: auto;
+	}
+
+	#container h2{
+		margin: 80px auto 80px auto;
+	}
+	.venue_image{
+		display: none;
+	}
+
+	.venue{
+		width: 100% !important;
+		text-align: center;
+	}
+	.venue h2{
+		text-align: center !important;
+	}
+
+	#venue {
+	    width: 90%;
+	}
+}
+
+
+
+@media screen and (max-width: 640px) {
+	.speakers_content .cell {
+	    width: 45%;
+	    margin: 0 4% 12px 1%;
+	}
+	#head_menu #menu{
+		font-size: 2.5vh;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	p.subtitle, p{font-size: 4vw !important;}
+	.speakers_content .cell {
+	    width: 60%;
+	    margin: 0 20% 12px 20%;
+	}
+}
