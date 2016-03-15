@@ -3,44 +3,47 @@
 	<section id="home">
 		<div class="table_cell">
 			<div class="description">
-				<p>October 6th in New York City</p>
+				<p class="subtitle">
+					<?php 
+						$args = array(
+						  'name'        => 'place-and-date',
+						  'post_type'   => 'page',
+						  'post_status' => 'publish',
+						  'numberposts' => 1
+						);
+
+						$my_posts = get_posts($args);
+					?>
+					<?php
+						if( $my_posts ) :
+						echo get_post_field('post_content', $my_posts[0]->ID);
+						endif;
+					?>
+					</p>
 				<h1>Inbox Awesome</h1>
 				<div class="h1"><img src="<?php echo get_template_directory_uri(); ?>/img/title.png"></div>
-				<p>The anual conference on the future of email,<br>
-				messaging and workflow</p>
+				<p class="subtitle"><?php echo html_entity_decode( get_bloginfo( 'description' ) ); ?></p>
 			</div>
 		</div>
 	</section>
 </div>
 <div class="container">
 	<section id="contact">
-		<div class="table_cell">
-			<p class="mini_blue">Make sure you don't miss our early bird tickets rates and major</p>
-			<p class="mini_blue">announcements - use form below to subscribe.</p>
-			<div class="arrow_down"></div>
-			<div class="subscribe_form">
-				<form>
-					<div>
-						<input type="text" name="" placeholder="Your Name">
-					</div>
-					<div>
-						<input type="text" name="" placeholder="Email address">
-					</div>
-					<div>
-						<input type="text" name="" placeholder="Company">
-					</div>
-					<div>
-						<button>Subscribe</button>
-					</div>
-				</form>
-			</div>
-			<p>It's on! We're excited to announce the</p>
-			<p>4th edition of inbox Awesome</p>
-			<p class="mini_blue">Save the date! You're invited to meet key influencers from the email and</p>
-			<p class="mini_blue">messaging space in the heart of New York City. Together, we will create a day full</p>
-			<p class="mini_blue">of insights, fun and actual bussiness. To learn more about inAwe's previous</p>
-			<p class="mini_blue"> editions, just keep reading.</p>
-		</div>
+		<?php 
+			$args = array(
+			  'name'        => 'contact',
+			  'post_type'   => 'page',
+			  'post_status' => 'publish',
+			  'numberposts' => 1
+			);
+
+			$my_posts = get_posts($args);
+		?>
+		<?php
+			if( $my_posts ) :
+			echo do_shortcode(get_post_field('post_content', $my_posts[0]->ID));
+			endif;
+		?>
 	</section>
 </div>
 <div class="container white">
@@ -60,10 +63,23 @@
 </div>
 <div class="container white">
 	<section id="speakers" class="">
-		<h2>Past Speakers</h2>
-		<p class="mini_blue">InAwe 2015 brought the most excellent thinkers on the inbox, pictures and words</p>
-		<p class="mini_blue">in mail, the zero-interface app trend, the Watch UI, and other</p>
-		<p class="mini_blue">places where you want to be</p>
+		<?php 
+			$args = array(
+			  'name'        => 'past-speakers',
+			  'post_type'   => 'page',
+			  'post_status' => 'publish',
+			  'numberposts' => 1
+			);
+
+			$my_posts = get_posts($args);
+		?>
+
+		<h2><?php if( $my_posts ) echo $my_posts[0]->post_title; ?></h2>
+		<?php
+			if( $my_posts ) :
+				echo $my_posts[0]->post_content;
+			endif;
+		?>
 		<?php include('speakers.php'); ?>
 	</section>
 </div>
@@ -74,7 +90,7 @@
 			<?php include('features.php'); ?>
 		</div>
 		<div class="subscribe_form_button">
-			<button>Subscribe</button>
+			<a href="#contact" class="subscribe">Subscribe</a>
 		</div>
 	</section>
 </div>
@@ -94,10 +110,18 @@
 			<img class="venue_image" src="<?php echo get_template_directory_uri(); ?>/img/machine.jpg" />
 	<section id="venue">
 		<div class="venue">
-			<h2>Our Venue</h2>
-			<p class="mini_blue">
-				This year, we will host you in the heart of New Yor's Garment Disrict, just a block from Times Square. At Stollway, our Unique new venue, you will not only find room to listen and connect, but also the working facility of the world's leading knitting machine manufacturer, Stoll. Don't miss connecting digital and analog crafts and reserve your seat for July 9th here.
-			</p>
+				<?php
+		$args = array(
+		  'name'        => 'our-venue',
+		  'post_type'   => 'page',
+		  'post_status' => 'publish',
+		  'numberposts' => 1
+		);
+
+		$my_posts = get_posts($args);
+	?>
+			<h2><?php if( $my_posts ) echo $my_posts[0]->post_title; ?></h2>
+			<p><?php if( $my_posts ) echo $my_posts[0]->post_content; ?></p>
 		</div>
 	</section>
 </div>

@@ -53,7 +53,7 @@ body{
 	margin: auto;
 }
 
-p.mini_blue{
+p{
 	color: #718CA7;
     text-align: center;
     display: block;
@@ -94,7 +94,7 @@ p.mini_blue{
 		-webkit-text-fill-color: transparent;
 		font-weight: 500;
 		margin: 30px 0;
-		font-family: 'Fredoka One', cursive;
+		font-family: 'Fredoka One', sans-serif;
 		display: block;
 	}
 
@@ -111,6 +111,7 @@ p.mini_blue{
     height: 80px;
     vertical-align: middle;
     display: table;
+    top: 0;
 }
 
 #head_menu #menu{
@@ -161,19 +162,23 @@ p.mini_blue{
     margin: 50px 0;
 }
 
-.subscribe_form_button button{
+a.subscribe{
+	text-align: center;
+}
+
+a.subscribe, .subscribe_form_button button{
 	margin: auto;
     display: block;
 }
 
-#contact .subscribe_form button, .subscribe_form_button button{
-	background: #2979ff;
-    font-size: 17px;
-    padding: 12px 0;
-    border: none;
-    color: white;
-    width: 180px;
-    border-radius: 5px;
+a.subscribe, #contact .subscribe_form button, .subscribe_form_button button, #contact .subscribe_form input[type=submit]{
+	background: #2979ff !important;
+    font-size: 17px !important;
+    padding: 12px 0 !important;
+    border: none !important;
+    color: white !important;
+    width: 180px !important;
+    border-radius: 5px !important;
 }
 #contact .subscribe_form input{
 	padding: 10px 20px;
@@ -223,7 +228,7 @@ p.mini_blue{
 #slider .experience span{
 	color: #2979ff;
     font-weight: 700;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka One', sans-serif;
 }
 
 #slider .experience{
@@ -290,6 +295,12 @@ p.mini_blue{
     line-height: 30px;
     font-size: 17px;
 }
+p.subtitle{
+	color: white;
+	line-height: 40px !important;
+    font-size: 22px !important;
+    word-spacing: 3px !important;
+}
 
 .cell{
 	/*display: table-cell;*/
@@ -304,12 +315,12 @@ p.mini_blue{
 	width: 100%;
 	/*border-collapse: separate;
     border-spacing: 24px;*/
-    -webkit-column-count: 4; /* Chrome, Safari, Opera */
-    -moz-column-count: 4; /* Firefox */
+    /*-webkit-column-count: 4;
+    -moz-column-count: 4; 
     column-count: 4;
-    -webkit-column-gap: 24; /* Chrome, Safari, Opera */
-    -moz-column-gap: 24; /* Firefox */
-    column-gap: 24;
+    -webkit-column-gap: 24;
+    -moz-column-gap: 24; 
+    column-gap: 24;*/
     margin-top: 90px;
 }
 .radious_image{
@@ -327,7 +338,7 @@ p.mini_blue{
 	color: #324259;
 	font-weight: 100;
 	font-size: 13px !important;
-	font-family: 'Fredoka One', cursive;
+	font-family: 'Fredoka One', sans-serif;
 }
 
 .speakers_content .cell{
@@ -336,7 +347,9 @@ p.mini_blue{
 	background: white;
 	text-align: center;
 	padding-bottom: 40px;
-	margin-bottom: 24px;
+	margin: 0 1% 12px 1%;
+	float: left;
+	width: 22%;
 }
 
 .speakers_content p{
