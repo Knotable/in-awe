@@ -59,14 +59,17 @@ body{
 	padding-top: 80px;
 	margin: auto;
 }
+p,.activities ul li{
+	color: #718CA7;
+	font-size: 15px !important;
+	line-height: 25px !important;
+}
 
 p{
-	color: #718CA7;
     text-align: center;
     display: block;
     margin: auto;
-    line-height: 25px !important;
-    font-size: 15px !important;
+    
 }
 
 .description h1{
@@ -81,18 +84,31 @@ p{
 	*/
 }
 
-#container{width: 100%;}
+#container{width: 100%;overflow: hidden;}
 .container{
 	width: 100%;
 	margin: auto;
 	position: relative;
-	overflow: hidden;
 }
 
 .scheduler_container{
 	background: #1b3149 url(img/background_scheduler.jpg) no-repeat;
 	background-size: contain;
 }
+
+.wpcf7-response-output{
+    width: 100%;
+    display: table-caption !important;
+    background: transparent;
+    border: none !important;
+    color: #1B3149;
+    margin: 10px auto !important;;	
+}
+
+span.wpcf7-not-valid-tip {
+    margin: 15px 0;
+}
+
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	.description h1{
@@ -234,8 +250,8 @@ a.subscribe, #contact .subscribe_form button, .subscribe_form_button button, #co
     line-height: 24px;
 }
 #slider .experience span{
-	color: #2979ff;
-    font-weight: 700;
+	color: #2064E1;
+    /*font-weight: 700;*/
     font-family: 'Fredoka One', sans-serif;
 }
 
@@ -529,6 +545,18 @@ section{
     box-sizing: border-box;
 }
 
+.activities ul{
+	padding-left: 20px;
+	margin: 10px 0;
+}
+
+.activities ul li, .activities p{
+	font-size: 15px;
+}
+
+.activities ul li{
+	list-style: disc;
+}
 /*@media screen and (min-width: 480px) {
 	.venue{
 		width: 40%;

@@ -66,22 +66,19 @@ return $count;
 }
 }
 
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
-  register_post_type( 'inbox_speakers',
-    array(
-      'labels' => array(
-        'name' => __( 'speakers' ),
-        'singular_name' => __( 'Speaker' ),
-        'add_new_item' => 'Add New'
-      ),
-      'public' => true,
-      'supports' => array(
-      	'thumbnail',
-      	'title',
-      	'editor',
-        'custom-fields'
-      	)
-    )
-  );
+function appthemes_add_quicktags() {
+    if (wp_script_is('quicktags')){
+?>
+    <script type="text/javascript">
+    QTags.addButton( 'eg_paragraph', 'p.subtitle', '<p class="subtitle">', '</p>', 'p', 'Paragraph tag', 1 );
+    QTags.addButton( 'eg_span', 'span', '<span>', '</span>', 'span', 'Span tag');
+    QTags.addButton( 'eg_hr', 'hr', '<hr/>', '', 'h', 'Horizontal rule line', 201 );
+    QTags.addButton( 'eg_br', 'br', '<br/>', '', 'br', 'Jump line' );
+    QTags.addButton( 'eg_pre', 'pre', '<pre lang="php">', '</pre>', 'q', 'Preformatted text tag', 111 );
+    </script>
+<?php
+    }
 }
+  add_action( 'admin_print_footer_scripts', 'appthemes_add_quicktags' );
+
+include('inbox_awesome.php');

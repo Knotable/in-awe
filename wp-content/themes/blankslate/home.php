@@ -1,110 +1,68 @@
-<?php include('header.php'); ?>
+<?php include('header.php');
+	$options = extract((array)json_decode(get_option('awesome_settings') ) );
+ ?>
 <div class="container">
 	<section id="home">
 		<div class="table_cell">
 			<div class="description">
 				<p class="subtitle">
-					<?php 
-						$args = array(
-						  'name'        => 'place-and-date',
-						  'post_type'   => 'page',
-						  'post_status' => 'publish',
-						  'numberposts' => 1
-						);
-
-						$my_posts = get_posts($args);
-					?>
-					<?php
-						if( $my_posts ) :
-						echo get_post_field('post_content', $my_posts[0]->ID);
-						endif;
-					?>
+					<?php echo stripslashes($Home->date); ?>
 					</p>
 				<h1>Inbox Awesome</h1>
 				<div class="h1"><img src="<?php echo get_template_directory_uri(); ?>/img/title.png"></div>
-				<p class="subtitle"><?php echo html_entity_decode( get_bloginfo( 'description' ) ); ?></p>
+				<p class="subtitle">
+					<?php echo stripslashes($Home->description); ?></p>
 			</div>
 		</div>
 	</section>
 </div>
 <div class="container">
 	<section id="contact">
-		<?php 
-			$args = array(
-			  'name'        => 'contact',
-			  'post_type'   => 'page',
-			  'post_status' => 'publish',
-			  'numberposts' => 1
-			);
-
-			$my_posts = get_posts($args);
-		?>
-		<?php
-			if( $my_posts ) :
-			echo do_shortcode(get_post_field('post_content', $my_posts[0]->ID));
-			endif;
-		?>
+		<?php echo stripslashes($Subscribe->text_above); ?>
+		<div class="arrow_down"></div>
+		<div class="subscribe_form">
+			<?php echo do_shortcode("[contact-form-7 id='64' title='Subscribe']"); ?>
+		</div>
+		<?php echo stripslashes($Subscribe->text_below); ?>
 	</section>
 </div>
 <div class="container white">
 	<section id="slider" class="">
 		<div class="experience">
 			<ul class="bxslider">
-				<li>
-					<h3>Stephanie Diamond</h3>
-					<span>Listings Project</span>
-					<p class="comment">it was an amazing experience I am teeming with inspiration and knowledge I never knew existed! I am so impressed with the community you gathered and the flow of the whole day. Everyone was interesting, passionate and informative.</p>	
-				</li>
-				<li>
-					<h3>Stephanie Diamond</h3>
-					<span>Listings Project</span>
-					<p class="comment">it was an amazing experience I am teeming with inspiration and knowledge I never knew existed! I am so impressed with the community you gathered and the flow of the whole day. Everyone was interesting, passionate and informative.</p>	
-				</li>
-				<li>
-					<h3>Stephanie Diamond</h3>
-					<span>Listings Project</span>
-					<p class="comment">it was an amazing experience I am teeming with inspiration and knowledge I never knew existed! I am so impressed with the community you gathered and the flow of the whole day. Everyone was interesting, passionate and informative.</p>	
-				</li>
-				<li>
-					<h3>Stephanie Diamond</h3>
-					<span>Listings Project</span>
-					<p class="comment">it was an amazing experience I am teeming with inspiration and knowledge I never knew existed! I am so impressed with the community you gathered and the flow of the whole day. Everyone was interesting, passionate and informative.</p>	
-				</li>
+			<?php
+				$testimonials = get_posts(array(
+						'post_type'   => 'testimonials',
+						'numberposts' => -1
+					));
+
+				foreach($testimonials as $testimonial){ ?>
+					<li>
+						<h3><?php echo $testimonial->post_title; ?></h3>
+						<span><?php echo get_post_meta($testimonial->ID, 'Company', true); ?></span>
+						<p class="comment"><?php echo $testimonial->post_content; ?></p>
+					</li>
+				<?php } ?>
 			</ul>
 		</div>
 	</section>
 </div>
 <div class="container scheduler_container">
 	<section id="schedule">
-		<h2>Last year schedule</h2>
+		<h2><?php echo stripslashes($Scheduler->title); ?></h2>
 		<?php include('schedule.php'); ?>
 	</section>
 </div>
 <div class="container white">
 	<section id="speakers" class="">
-		<?php 
-			$args = array(
-			  'name'        => 'past-speakers',
-			  'post_type'   => 'page',
-			  'post_status' => 'publish',
-			  'numberposts' => 1
-			);
-
-			$my_posts = get_posts($args);
-		?>
-
-		<h2><?php if( $my_posts ) echo $my_posts[0]->post_title; ?></h2>
-		<?php
-			if( $my_posts ) :
-				echo $my_posts[0]->post_content;
-			endif;
-		?>
+		<h2><?php echo stripslashes($Speakers->title); ?></h2>
+			<?php echo stripslashes($Speakers->description); ?>
 		<?php include('speakers.php'); ?>
 	</section>
 </div>
 <div class="container">
 	<section id="features">
-		<h2>Features</h2>
+		<h2><?php echo stripslashes($Features->title); ?></h2>
 		<div class="features">
 			<?php include('features.php'); ?>
 		</div>
@@ -115,33 +73,35 @@
 </div>
 <div class="container white">
 	<section id="partnering" class="">
-		<h2>We are partnering with these amazing companies</h2>
+		<h2><?php echo stripslashes($Partners->title); ?></h2>
 		<div class="partners">
-			<?php 
-			$partners = array();
-			for($i = 3;$i<=17;$i++){ if( $i==8 || $i==14 ) continue; 
-					$partners[] = $i;
-				?>
+			<?php
 
-			<?php } 
+			$partners_logo = get_posts(array(
+						'post_type'   => 'partners',
+						'numberposts' => -1
+					));
+
 			$partner_group = 1;
 			$count = 0;
-			foreach($partners as $key =>$partner){
+			foreach($partners_logo as $key => $partner){
 				if($partner_group == 1){
 					$partner_group = 0;
 					echo "<div class='partner_row'>";
 				} ?>
+
 				<div class="partner">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/partners_<?php echo sprintf("%02d", $partner); ?>.png">
+					<img class="" src="<?php echo get_the_post_thumbnail_url($partner->ID); ?>">
 				</div>
 				<?php
 				$count ++;
-				if($count ==5 || !isset($partners[$key+1] )){
+				if($count ==5 || !isset($partners_logo[$key+1] )){
 					$partner_group = 1;
 					echo "</div>";
 					$count = 0;
 				}
 			}
+
 			?>
 		</div>
 	</section>
@@ -150,18 +110,8 @@
 			<img class="venue_image" src="<?php echo get_template_directory_uri(); ?>/img/machine.jpg" />
 	<section id="venue">
 		<div class="venue">
-				<?php
-		$args = array(
-		  'name'        => 'our-venue',
-		  'post_type'   => 'page',
-		  'post_status' => 'publish',
-		  'numberposts' => 1
-		);
-
-		$my_posts = get_posts($args);
-	?>
-			<h2><?php if( $my_posts ) echo $my_posts[0]->post_title; ?></h2>
-			<p><?php if( $my_posts ) echo $my_posts[0]->post_content; ?></p>
+			<h2><?php echo stripslashes($Venue->title); ?></h2>
+			<p><?php echo stripslashes($Venue->description); ?></p>
 		</div>
 	</section>
 </div>
@@ -176,8 +126,7 @@
 </div>
 <div class="container white">
 	<section id="footer">
-		<p>We are  partnerininbox Awesome 2015 was presented by Mailchimp and Knotable.</p>
-		<p>Music was curated by <span>Soundfriend</span></p>
+		<p><?php echo stripslashes($Footer->description); ?></p>
 		<p class="copy">&copy;2016 Inbox Awesome. all rights reserved</p>
 		<div class="socialnetworks">
 			<div class="cell"><a href="#" class="facebook"></a></div>
