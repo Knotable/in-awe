@@ -138,7 +138,7 @@
 <script src="<?php echo get_template_directory_uri();?>/js/jquery.bxslider/jquery.bxslider.min.js"></script>
 <script>
     jQuery(document).scroll(function(){
-        if(jQuery('#head_menu').offset()['top'] < (jQuery('#home').height() - jQuery('#head_menu').height() ) )
+        if(jQuery('#head_menu').offset()['top'] < 1 )
             jQuery('#head_menu').css('background','none');
         else
             jQuery('#head_menu').css('background','#1b3149');
