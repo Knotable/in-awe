@@ -204,6 +204,7 @@ a.subscribe, #contact .subscribe_form button, .subscribe_form_button button, #co
     width: 180px !important;
     border-radius: 5px !important;
 }
+
 #contact .subscribe_form input{
 	padding: 10px 20px;
     font-size: 100%;

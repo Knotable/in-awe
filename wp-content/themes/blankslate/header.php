@@ -6,7 +6,7 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri (); ?>/blog.css" />
 <?php wp_head(); ?>
 <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 <link href='<?php echo get_template_directory_uri(); ?>/js/jquery.bxslider/jquery.bxslider.css' rel='stylesheet' type='text/css'>
@@ -21,11 +21,18 @@
 	<div id="head_menu">
 		<div class="menu_contain">
 			<ul id="menu">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#schedule">Schedule</a></li>
-				<li><a href="#speakers">Speakers</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="/#home">Home</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/#schedule">Schedule</a></li>
+				<li><a href="/#speakers">Speakers</a></li>
+				<li><a href="/#contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>
 <div id="container">
+	<?php extract((array)json_decode(get_option('awesome_settings') ) ); ?>
+	<section id="home">
+		<div class="description">
+			<h1>Inbox Awesome</h1>
+		</div>
+	</section>

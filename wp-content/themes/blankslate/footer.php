@@ -1,4 +1,5 @@
-<div class="container white">
+<?php extract((array)json_decode(get_option('awesome_settings') ) ); ?>
+<div class="">
 	<section id="footer">
 		<p><?php echo stripslashes($Footer->description); ?></p>
 		<p class="copy">&copy;2016 Inbox Awesome. all rights reserved</p>
@@ -9,31 +10,14 @@
 		</div>
 	</section>
 </div>
-<script src="<?php echo get_template_directory_uri();?>/js/jquery.bxslider/jquery.bxslider.min.js"></script>
+	</div>
+<?php  wp_footer(); ?>
 <script>
-    jQuery(document).scroll(function(){
-    	var limit_bt = 1;
-    	if( jQuery('#wpadminbar').size() > 0 )
-    		limit_bt = jQuery('#wpadminbar').height() + 1;
-        if(jQuery('#head_menu').offset()['top'] < limit_bt )
-            jQuery('#head_menu').css('background','none');
-        else
-            jQuery('#head_menu').css('background','#1b3149');
-    });
-
-    jQuery(document).ready(function(){
-    	jQuery('.bxslider').bxSlider({
-    		auto:true
-		});
-
+	jQuery(document).ready(function(){
 		if( jQuery('#wpadminbar').size() > 0 ){
 			jQuery('#head_menu').css('top',jQuery('#wpadminbar').height() );
 		}
-    });
-
-
+	});
 </script>
-	</div>
-<?php  wp_footer(); ?>
 </body>
 </html>

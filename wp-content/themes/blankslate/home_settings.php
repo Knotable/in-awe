@@ -16,6 +16,7 @@
 	<div id="tabs">
 		<ul>
 			<li><a href="#home">Home page</a></li>
+			<li><a href="/blog">Blog</a></li>
 			<li><a href="#subscribe">Subscribe page</a></li>
 			<li><a href="#features">Features page</a></li>
 			<li><a href="#our_venue">Our venue page</a></li>
@@ -248,7 +249,5 @@
 
 	jQuery(function() {
     	jQuery( "#tabs" ).tabs();
-
-    
   	});
 </script>
