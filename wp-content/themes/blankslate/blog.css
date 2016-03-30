@@ -30,7 +30,6 @@ body{
 #home{
 	text-align: center;
 	width: 100%;
-	padding-top: 80px;
 	margin: auto;
 }
 p{
@@ -58,7 +57,7 @@ p{
 	.description h1{
 		color: #1B3149;
 		font-weight: 500;
-		margin: 30px 0;
+		margin: 30px 0 15px 0;
 		font-family: 'Fredoka One', sans-serif;
 		display: block;
 	}
