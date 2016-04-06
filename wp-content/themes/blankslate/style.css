@@ -40,7 +40,7 @@ body{
 	background: #1b3149 url(img/background.jpg) no-repeat;
 	background-size: contain;
 	color: white;
-  font-family: 'Minion Pro', sans-serif;
+  font-family: 'Minion Pro', sans-serif !important;
 	/*font-family: 'Varela Round', sans-serif;*/
 }
 
