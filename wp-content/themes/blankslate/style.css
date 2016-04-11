@@ -72,7 +72,7 @@ body{
 	height: 100vh;
 	display: table;
 	width: 100%;
-	padding-top: 80px;
+	/*padding-top: 80px;*/
 	margin: auto;
 }
 p,.activities ul li{
@@ -94,8 +94,8 @@ p{
 .description .h1 img{width: 100%;}
 .description .h1{
 	margin: 50px auto;
+  width: 60%;
 	/*background: url(img/title.png) no-repeat;
-	width: 624px;
 	height: 83px;
 	*/
 }
@@ -128,7 +128,7 @@ span.wpcf7-not-valid-tip {
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	.description h1{
-		font-size: 84px;
+		font-size: 150px;
 		background: -webkit-linear-gradient(left,#00EECA, #227EF9);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -704,6 +704,10 @@ section{
 		font-size: 2.5vh;
 		width: 100%;
 	}
+
+  .description .h1{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 480px) {
