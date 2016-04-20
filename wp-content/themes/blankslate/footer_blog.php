@@ -18,7 +18,7 @@
         if(jQuery('#head_menu').offset()['top'] < limit_bt )
             jQuery('#head_menu').css('background','none');
         else
-            jQuery('#head_menu').css('background','#1b3149');
+            jQuery('#head_menu').css('background','#FFF');
     });
 
     jQuery(document).ready(function(){
