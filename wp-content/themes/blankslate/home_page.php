@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
 	Template Name: Home
 */
@@ -6,6 +6,8 @@ include('header_blog.php');
 	extract((array)json_decode(get_option('awesome_settings') ) );
  ?>
 <div class="container">
+	<div class="bg-main"></div>
+	<div class="fade-layer"></div>
 	<section id="home">
 		<div class="table_cell">
 			<div class="description">
@@ -19,6 +21,8 @@ include('header_blog.php');
 			</div>
 		</div>
 	</section>
+
+
 </div>
 <div class="container">
 	<section id="contact">
