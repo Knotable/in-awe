@@ -65,15 +65,18 @@ body{
 }
 
 #contact{
-    padding-bottom: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+  margin: 0 auto
 }
 
-#home, #contact{
+#home{
 	text-align: center;
 	height: 100vh;
 	display: table;
 	width: 100%;
-	/*padding-top: 80px;*/
 	margin: auto;
 }
 p,.activities ul li{
@@ -312,26 +315,21 @@ a.subscribe, #contact .subscribe_form button, .subscribe_form_button button, #co
 }
 #container h2{
 	font-size: 30px;
-    letter-spacing: 2px;
-    text-align: center;
-    font-weight: 100;
-    margin: 80px auto 120px auto;
-    position: relative;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 100;
+  margin: 0px auto 80px;
+  position: relative;
 }
 
 #schedule, #speakers, #features, #partnering{
-	padding-top: 80px;
 	width: 100%;
-    overflow: auto;
-    padding-bottom: 75px;
+  overflow: auto;
+  padding: 92px 0;
 }
 
 #partnering{
 	padding-bottom: 175px
-}
-
-#speakers h2{
-	margin-bottom: 40px;
 }
 
 #schedule .hour{
@@ -424,11 +422,10 @@ p.subtitle{
 
 .speakers_content .cell{
 	text-align: center;
-	padding-bottom: 40px;
+	padding-bottom: 32px;
 	margin: 0 1% 12px 1%;
 	float: left;
 	width: 22%;
-	height: 340px;
 }
 
 .speakers_content p{
@@ -530,8 +527,14 @@ section{
 	float: left;
 }
 
-.inboxing{
+.inbox a{
+	text-decoration: none;
+	color: #fff;
+}
 
+.inbox h2{
+	margin: 0!important;
+	line-height:170px;
 }
 
 .inbox.tres{
@@ -570,7 +573,7 @@ section{
 .socialnetworks{
 	display: table;
 	width: 150px;
-	margin: 20px auto;
+	margin: 20px auto 0;
 }
 
 .socialnetworks a {
@@ -718,8 +721,11 @@ section{
 		height: auto;
 	}
 
+	#schedule, #speakers, #features, #partnering{
+		padding: 62px 0
+	}
 	#container h2{
-		margin: 80px auto 80px auto;
+		margin: 0px auto 52px;
 	}
 	.venue_image{
 		display: none;

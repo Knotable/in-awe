@@ -126,10 +126,14 @@ include('header_blog.php');
 <div class="container white blank_space"></div>
 <div class="container inboxing">
 	<div class="inbox cator">
-		<h2>Inbox 2014</h2>
+		<a href="http://awesomeseries.org/" target="_blank">
+		  <h2> Inbox 2014</h2>
+		</a>
 	</div>
 	<div class="inbox tres">
-		<h2>Inbox 2013</h2>
+		<a href="http://inboxawesome.org/" target="_blank">
+			<h2>Inbox 2013</h2>
+		</a>
 	</div>
 </div>
 <?php include('footer_blog.php');
