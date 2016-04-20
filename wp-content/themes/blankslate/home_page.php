@@ -24,7 +24,7 @@ include('header_blog.php');
 
 
 </div>
-<div class="container">
+<div class="container grey">
 	<section id="contact">
 		<?php echo stripslashes($Subscribe->text_above); ?>
 		<div class="arrow_down"></div>
@@ -55,7 +55,7 @@ include('header_blog.php');
 		</div>
 	</section>
 </div>
-<div class="container scheduler_container">
+<div class="container scheduler_container grey">
 	<section id="schedule">
 		<h2><?php echo stripslashes($Scheduler->title); ?></h2>
 		<?php include('schedule.php'); ?>
@@ -68,7 +68,7 @@ include('header_blog.php');
 		<?php include('speakers.php'); ?>
 	</section>
 </div>
-<div class="container">
+<div class="container grey">
 	<section id="features">
 		<h2><?php echo stripslashes($Features->title); ?></h2>
 		<div class="features">
@@ -114,8 +114,8 @@ include('header_blog.php');
 		</div>
 	</section>
 </div>
-<div class="container">
-			<img class="venue_image" src="<?php echo get_template_directory_uri(); ?>/img/machine.jpg" />
+<div class="container grey">
+	<img class="venue_image" src="<?php echo get_template_directory_uri(); ?>/img/machine.jpg" />
 	<section id="venue">
 		<div class="venue">
 			<h2><?php echo stripslashes($Venue->title); ?></h2>
@@ -124,7 +124,7 @@ include('header_blog.php');
 	</section>
 </div>
 <div class="container white blank_space"></div>
-<div class="container inboxing">
+<div class="container inboxing white">
 	<div class="inbox cator">
 		<a href="http://awesomeseries.org/" target="_blank">
 		  <h2> Inbox 2014</h2>

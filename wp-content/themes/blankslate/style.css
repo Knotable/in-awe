@@ -22,7 +22,7 @@ BlankSlate is distributed under the terms of the GNU GPL
   font-family: 'Minion Pro';
   font-style: normal;
   font-weight: 400;
-  src: local('Minion Pro'), url(fonts/MinionPro.ttf) format('ttf')
+  src: url(fonts/MinionPro-Regular.otf);
 }
 
 @font-face {
@@ -200,14 +200,18 @@ html {
 }
 
 body {
-  color: white;
   font-family: 'Minion Pro', sans-serif !important;
   line-height: 1.4em;
   font-size: 18px;
-  background-color: #1b3149;
+  background-color: #FFF;
 }
 
 .white {
+  background: #fff;
+  color: #5C6B72;
+}
+
+.grey {
   background: #FAFBFF;
   color: #5C6B72;
 }
@@ -281,11 +285,6 @@ p {
   position: relative;
 }
 
-.scheduler_container {
-  background: #1b3149 url(img/background_scheduler.jpg) no-repeat;
-  background-size: contain;
-}
-
 .wpcf7-response-output {
   width: 100%;
   display: table-caption !important;
@@ -330,6 +329,7 @@ span.wpcf7-not-valid-tip {
     line-height: 0.8em;
     letter-spacing: 0em;
     text-transform: uppercase;
+    color: #fff;
   }
 
   .description .h1 {
@@ -381,6 +381,7 @@ span.wpcf7-not-valid-tip {
   font-size: 32px !important;
   line-height: 1em !important;
   letter-spacing: 0.06em;
+  color: #fff;
 }
 
 #container p {
@@ -565,7 +566,6 @@ a.subscribe,
 }
 
 p.subtitle {
-  color: white;
   line-height: 40px !important;
   font-size: 22px !important;
   word-spacing: 3px !important;
