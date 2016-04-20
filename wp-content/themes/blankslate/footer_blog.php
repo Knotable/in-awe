@@ -3,9 +3,9 @@
 		<p><?php echo stripslashes($Footer->description); ?></p>
 		<p class="copy">&copy;2016 Inbox Awesome. all rights reserved</p>
 		<div class="socialnetworks">
-			<div class="cell"><a href="#" class="facebook"></a></div>
-			<div class="cell"><a href="#" class="twitter"></a></div>
-			<div class="cell"><a href="#" class="instagram"></a></div>
+			<div class="cell"><a href="http://facebook.com/awehq" target="_blank" class="facebook"></a></div>
+			<div class="cell"><a href="http://twitter.com/awehq" target="_blank" class="twitter"></a></div>
+			<div class="cell"><a href="http://instagram.com/awehq" target="_blank" class="instagram"></a></div>
 		</div>
 	</section>
 </div>
