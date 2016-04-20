@@ -22,7 +22,7 @@ BlankSlate is distributed under the terms of the GNU GPL
   font-family: 'Minion Pro';
   font-style: normal;
   font-weight: 400;
-  src: local('Minion Pro'), url(fonts/MinionPro.ttf) format('ttf')
+  src: url(fonts/MinionPro-Regular.otf);
 }
 
 @font-face {
