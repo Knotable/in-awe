@@ -245,7 +245,7 @@ body {
 p,
 .activities ul li {
   color: #718CA7;
-  font-size: 15px !important;
+  font-size: 18px !important;
   line-height: 25px !important;
 }
 
@@ -767,7 +767,7 @@ section {
 }
 
 #footer p {
-  font-size: 14px;
+  font-size: 14px!important;
   text-align: center;
   line-height: 25px;
   letter-spacing: 1px;
@@ -869,15 +869,15 @@ section {
 
 @media screen and (max-width:800px) {
   .description h1 {
-    font-size: 12vw !important;
+    font-size: 20vw !important;
   }
 
   #home {
     padding-top: 0px;
   }
 
-  p.subtitle {
-    font-size: 3vw !important;
+  p.subtitle, #home .subtitle {
+    font-size: 4vw !important;
   }
 
   #contact .subscribe_form form div {
