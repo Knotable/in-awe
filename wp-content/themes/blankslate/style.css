@@ -13,7 +13,6 @@ Text Domain: blankslate
 BlankSlate WordPress Theme © 2011-2015 TidyThemes
 BlankSlate is distributed under the terms of the GNU GPL
 */
-@import url(https://fonts.googleapis.com/css?family=Varela+Round|Fredoka+One);
 
 /*@import url('css/980.css');
 @import url('css/800.css');
@@ -212,7 +211,7 @@ body {
 }
 
 .grey {
-  background: #FAFBFF;
+  background: #F5F5F5;
   color: #5C6B72;
 }
 
@@ -497,7 +496,6 @@ a.subscribe,
 
 #slider .experience span {
   color: #2064E1;    /*font-weight: 700;*/
-  font-family: 'Fredoka One', sans-serif;
 }
 
 #slider .experience {
@@ -613,15 +611,13 @@ p.subtitle {
 
 .speakers_content p.name {
   color: #324259;
-  font-family: sans-serif;
   font-size: 16px !important;
 }
 
 .speakers_content p.company {
-  color: #324259;
+  color: #718CA7;
   font-weight: 100;
-  font-size: 13px !important;
-  font-family: 'Fredoka One', sans-serif;
+  font-size: 16px !important;
 }
 
 .speakers_content p.description{
@@ -698,10 +694,21 @@ section {
 .partner {
   width: 20%;
   display: inline-block;
+  vertical-align: middle;
+  height: 100px;
+  margin: 28px 0px;
+  position: relative;
 }
 
 .partner img {
-  width: 100%;
+  max-width: 94%;
+  max-height: 94%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  margin: auto;
 }
 
 #venue {
