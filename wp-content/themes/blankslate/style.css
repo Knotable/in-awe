@@ -613,7 +613,8 @@ p.subtitle {
 
 .speakers_content p.name {
   color: #324259;
-  font-size: 15px !important;
+  font-family: sans-serif;
+  font-size: 16px !important;
 }
 
 .speakers_content p.company {
@@ -621,6 +622,11 @@ p.subtitle {
   font-weight: 100;
   font-size: 13px !important;
   font-family: 'Fredoka One', sans-serif;
+}
+
+.speakers_content p.description{
+  font-family: sans-serif;
+  font-size: 14px !important;
 }
 
 .speakers_content .cell {
