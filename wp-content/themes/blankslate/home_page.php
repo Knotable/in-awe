@@ -14,7 +14,7 @@ include('header_blog.php');
 				<p class="subtitle">
 					<?php echo stripslashes($Home->date); ?>
 					</p>
-				<h1>Inbox Awesome</h1>
+				<h1>Work Awesome</h1>
 				<div class="h1"><img src="<?php echo get_template_directory_uri(); ?>/img/title.png"></div>
 				<p class="subtitle">
 					<?php echo stripslashes($Home->description); ?></p>
@@ -115,7 +115,7 @@ include('header_blog.php');
 	</section>
 </div>
 <div class="container grey">
-	<img class="venue_image" src="<?php echo get_template_directory_uri(); ?>/img/machine.jpg" />
+	<img class="venue_image" src="<?php echo get_template_directory_uri(); ?>/img/venue.jpg" />
 	<section id="venue">
 		<div class="venue">
 			<h2><?php echo stripslashes($Venue->title); ?></h2>
