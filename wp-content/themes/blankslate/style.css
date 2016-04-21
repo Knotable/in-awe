@@ -243,6 +243,7 @@ body {
   display: table;
   width: 100%;
   margin: auto;
+  padding-top: 80px;
 }
 
 p,
@@ -606,7 +607,8 @@ p.subtitle {
 }
 
 .radius_image img {
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .speakers_content p.name {
@@ -716,10 +718,12 @@ section {
 }
 
 .venue_image {
-  position: absolute;
-  right: 0;
-  top: -100px;
   z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  right: 0px;
+  max-width: 50%;
 }
 
 .venue p {
@@ -735,6 +739,7 @@ section {
 .venue {
   width: 45%;
   text-align: left;
+  padding-right: 32px;
 }
 
 .blank_space {
@@ -853,24 +858,12 @@ section {
   .venue {
     width: 50% !important;
   }
-
-  .venue_image {
-    right: -30%;
-    bottom: 0;
-  }
-
 }
 
 @media screen and (max-width:980px) {
   .venue {
     width: 50% !important;
   }
-
-  .venue_image {
-    right: -30%;
-    bottom: 0;
-  }
-
 }
 
 @media screen and (max-width:976px) {
