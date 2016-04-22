@@ -645,10 +645,15 @@ section {
   margin: auto;
 }
 
-.entry-content img.attachment-post-thumbnail {
-    width: 100%;
-    height: auto;
-    margin: 10px auto 40px auto;
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+#linkedin {
+  path {
+    fill: #046399;
+  }
 }
 
 .features {
