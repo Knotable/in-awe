@@ -33,6 +33,6 @@
 	<?php extract((array)json_decode(get_option('awesome_settings') ) ); ?>
 	<section id="home">
 		<div class="description">
-			<h1>Inbox Awesome</h1>
+			<h1><?php echo bloginfo('name'); ?></h1>
 		</div>
 	</section>

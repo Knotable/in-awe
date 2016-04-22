@@ -382,6 +382,7 @@ span.wpcf7-not-valid-tip {
   line-height: 1em !important;
   letter-spacing: 0.06em;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 #container p {
@@ -642,6 +643,12 @@ p.subtitle {
 section {
   max-width: 1060px;
   margin: auto;
+}
+
+.entry-content img.attachment-post-thumbnail {
+    width: 100%;
+    height: auto;
+    margin: 10px auto 40px auto;
 }
 
 .features {

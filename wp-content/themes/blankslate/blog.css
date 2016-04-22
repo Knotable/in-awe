@@ -10,7 +10,7 @@ body{
 	background: white;
 	background-size: contain;
 	color: #1B3149;
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Minion Pro', sans-serif !important;
 }
 
 #menu li{
@@ -32,11 +32,20 @@ body{
 	width: 100%;
 	margin: auto;
 }
+
 p{
 	color: #718CA7;
 	font-size: 15px !important;
 	line-height: 25px !important;
+  line-height: 1.5 !important;
+  margin: 1.5em 0;
 }
+
+strong,b{
+  font-weight: 700 !important;
+}
+
+em{font-style: italic !important;}
 
 #container{
 	width: 90%;
@@ -51,6 +60,11 @@ p{
 
 .entry-content{
 	text-align: justify;
+}
+
+.entry-content a {
+    color: #2064E1 !important;
+    text-decoration: underline !important;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
