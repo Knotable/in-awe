@@ -99,7 +99,14 @@ include('header_blog.php');
 				} ?>
 
 				<div class="partner">
+					<?php $link = get_post_meta($partner->ID, 'link', true); 
+					if($link != '')
+						echo "<a href='$link'>";
+					?>
+
 					<img class="" src="<?php echo get_the_post_thumbnail_url($partner->ID); ?>">
+					<?php if($link != '')
+						echo "</a>"; ?>
 				</div>
 				<?php
 				$count ++;
