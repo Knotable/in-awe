@@ -99,9 +99,9 @@ include('header_blog.php');
 				} ?>
 
 				<div class="partner">
-					<?php $link = get_post_meta($partner->ID, 'link', true); 
+					<?php $link = get_post_meta($partner->ID, 'link', true);
 					if($link != '')
-						echo "<a href='$link'>";
+						echo "<a href='$link' target='_blank'>";
 					?>
 
 					<img class="" src="<?php echo get_the_post_thumbnail_url($partner->ID); ?>">
