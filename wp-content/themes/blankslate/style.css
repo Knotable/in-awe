@@ -244,6 +244,7 @@ body {
   width: 100%;
   margin: auto;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 p,
@@ -382,7 +383,6 @@ span.wpcf7-not-valid-tip {
   line-height: 1em !important;
   letter-spacing: 0.06em;
   color: #fff;
-  margin-bottom: 20px;
 }
 
 #container p {

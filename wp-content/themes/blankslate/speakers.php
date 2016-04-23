@@ -33,7 +33,7 @@
 			</a>
 			<a href="<?php
 				echo get_post_meta($speaker->ID, 'Linkedin', true);
-			?>" target="_blank">
+			?>" target="_blank" style="margin-left:8px">
 			  <svg class="icon"><use xlink:href="#linkedin" /></svg>
 			</a>
 		</div>
