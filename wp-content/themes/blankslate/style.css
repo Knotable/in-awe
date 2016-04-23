@@ -639,6 +639,13 @@ p.subtitle {
 .speakers_content p {
   line-height: 20px !important;
 }
+.speaker-links{
+  margin-top: 8px;
+}
+.speaker-links a{
+  text-decoration: none;
+  display: inline-block;
+}
 
 section {
   max-width: 1060px;
