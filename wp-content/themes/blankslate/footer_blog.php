@@ -1,7 +1,7 @@
 <div class="container white">
 	<section id="footer">
 		<p><?php echo stripslashes($Footer->description); ?></p>
-		<p class="copy">&copy;2016 Inbox Awesome. all rights reserved</p>
+		<!--<p class="copy">&copy;2016 Inbox Awesome. all rights reserved</p>-->
 		<div class="socialnetworks">
 			<div class="cell"><a href="http://facebook.com/awehq" target="_blank" class="facebook"></a></div>
 			<div class="cell"><a href="http://twitter.com/awehq" target="_blank" class="twitter"></a></div>

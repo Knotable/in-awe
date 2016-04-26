@@ -2,7 +2,7 @@
 <div class="">
 	<section id="footer">
 		<p><?php echo stripslashes($Footer->description); ?></p>
-		<p class="copy">&copy;2016 Inbox Awesome. all rights reserved</p>
+		<!--<p class="copy">&copy;2016 Inbox Awesome. all rights reserved</p>-->
 		<div class="socialnetworks">
 			<div class="cell"><a href="#" class="facebook"></a></div>
 			<div class="cell"><a href="#" class="twitter"></a></div>
