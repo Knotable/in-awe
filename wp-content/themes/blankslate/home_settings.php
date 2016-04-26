@@ -112,9 +112,13 @@
 		</div>
 		<div id="footer"class="element">
 			<h1>Footer page</h1>
-				<h2>Inbox 2013 link</h2>
+				<h2>Inbox 1 text</h2>
+				<input type="text" value="<?php echo stripslashes($Footer->text1); ?>" name="AwesomeSettings[Footer][text1]">
+				<h2>Inbox 1 link</h2>
 				<input type="text" value="<?php echo stripslashes($Footer->inbox1); ?>" name="AwesomeSettings[Footer][inbox1]">
-				<h2>Inbox 2014 link</h2>
+				<h2>Inbox 2 text</h2>
+				<input type="text" value="<?php echo stripslashes($Footer->text); ?>" name="AwesomeSettings[Footer][text2]">
+				<h2>Inbox 2 link</h2>
 				<input type="text" value="<?php echo stripslashes($Footer->inbox2); ?>" name="AwesomeSettings[Footer][inbox2]">
 				<div id="poststuff">
 					<h2>Text</h2>
