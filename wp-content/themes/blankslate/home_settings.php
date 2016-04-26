@@ -117,7 +117,7 @@
 				<h2>Inbox 1 link</h2>
 				<input type="text" value="<?php echo stripslashes($Footer->inbox1); ?>" name="AwesomeSettings[Footer][inbox1]">
 				<h2>Inbox 2 text</h2>
-				<input type="text" value="<?php echo stripslashes($Footer->text); ?>" name="AwesomeSettings[Footer][text2]">
+				<input type="text" value="<?php echo stripslashes($Footer->text2); ?>" name="AwesomeSettings[Footer][text2]">
 				<h2>Inbox 2 link</h2>
 				<input type="text" value="<?php echo stripslashes($Footer->inbox2); ?>" name="AwesomeSettings[Footer][inbox2]">
 				<div id="poststuff">
