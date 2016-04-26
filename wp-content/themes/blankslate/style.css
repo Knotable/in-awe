@@ -634,6 +634,7 @@ p.subtitle {
   margin: 0 1% 12px 1%;
   float: left;
   width: 22%;
+  min-height: 358px;
 }
 
 .speakers_content p {

@@ -75,7 +75,7 @@ include('header_blog.php');
 			<?php include('features.php'); ?>
 		</div>
 		<div class="subscribe_form_button">
-			<a href="#contact" class="subscribe">Subscribe</a>
+			<a href="https://www.eventbrite.com/e/work-awesome-tickets-21453749743" target="_blank" class="subscribe">Sign up here</a>
 		</div>
 	</section>
 </div>
