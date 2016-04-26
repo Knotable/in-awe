@@ -133,12 +133,12 @@ include('header_blog.php');
 <div class="container white blank_space"></div>
 <div class="container inboxing white">
 	<div class="inbox cator">
-		<a href="http://inboxawesome.org/" target="_blank">
+		<a href="<?php echo stripslashes($Footer->inbox1); ?>" target="_blank">
 		  <h2> Inbox 2014</h2>
 		</a>
 	</div>
 	<div class="inbox tres">
-		<a href="http://awesomeseries.org/" target="_blank">
+		<a href="<?php echo stripslashes($Footer->inbox2); ?>" target="_blank">
 			<h2>Inbox 2013</h2>
 		</a>
 	</div>

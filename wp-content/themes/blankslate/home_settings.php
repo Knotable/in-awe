@@ -112,6 +112,10 @@
 		</div>
 		<div id="footer"class="element">
 			<h1>Footer page</h1>
+				<h2>Inbox 2013 link</h2>
+				<input type="text" value="<?php echo stripslashes($Footer->inbox1); ?>" name="AwesomeSettings[Footer][inbox1]">
+				<h2>Inbox 2014 link</h2>
+				<input type="text" value="<?php echo stripslashes($Footer->inbox2); ?>" name="AwesomeSettings[Footer][inbox2]">
 				<div id="poststuff">
 					<h2>Text</h2>
 					<div id="<?php echo user_can_richedit() ? 'postdivrich' : 'postdiv'; ?>" class="postarea"><?php wp_editor( stripslashes($Footer->description), 'footer_description', array(
