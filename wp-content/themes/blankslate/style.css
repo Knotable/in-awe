@@ -322,7 +322,7 @@ span.wpcf7-not-valid-tip {
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   .description h1 {
-    font-size: 300px;
+    font-size: 18vw;
     font-weight: 500;
     margin: 30px 0;
     font-family: 'DINWeb-Cond', sans-serif;
@@ -379,7 +379,7 @@ span.wpcf7-not-valid-tip {
   font-family: 'DINWeb-Cond', sans-serif;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 32px !important;
+  font-size: 3vw !important;
   line-height: 1em !important;
   letter-spacing: 0.06em;
   color: #fff;
@@ -888,14 +888,14 @@ section {
 
 @media screen and (max-width:976px) {
   .description h1 {
-    font-size: 200px;
+    /*font-size: 200px;*/
   }
 
 }
 
 @media screen and (max-width:800px) {
   .description h1 {
-    font-size: 20vw !important;
+    /*font-size: 20vw !important;*/
   }
 
   #home {
@@ -903,7 +903,7 @@ section {
   }
 
   p.subtitle, #home .subtitle {
-    font-size: 4vw !important;
+    /*font-size: 4vw !important;*/
   }
 
   #contact .subscribe_form form div {
