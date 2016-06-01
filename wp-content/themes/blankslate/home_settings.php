@@ -222,6 +222,14 @@
 	    margin: 0 0 3px;
 	    background-color: #fff;
 	}
+	.ui-sortable-handle:hover{
+		background: #eeeeee;
+		cursor: all-scroll;
+	}
+	.ui-sortable-helper{
+		border: 1px #ccc solid;
+		cursor: all-scroll;
+	}
 </style>
 <script>
 	var gastosrows=jQuery('#scheduler_table tbody tr').length;
@@ -258,4 +266,8 @@
 	jQuery(function() {
     	jQuery( "#tabs" ).tabs();
   	});
+  jQuery(function() {
+    jQuery( "#scheduler_table tbody" ).sortable();
+    /*$( "#sortable" ).disableSelection();*/
+  });
 </script>
