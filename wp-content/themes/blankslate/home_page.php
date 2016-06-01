@@ -110,7 +110,7 @@ include('header_blog.php');
 				</div>
 				<?php
 				$count ++;
-				if($count ==5 || !isset($partners_logo[$key+1] )){
+				if($count ==3 || !isset($partners_logo[$key+1] )){
 					$partner_group = 1;
 					echo "</div>";
 					$count = 0;
