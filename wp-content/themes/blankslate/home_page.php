@@ -10,15 +10,17 @@ include('header_blog.php');
 	<div class="fade-layer"></div>
 	<section id="home">
 		<div class="table_cell">
-			<img src="<?php echo get_template_directory_uri (); ?>/img/logo.png" alt="workawesome" style="">
 			<div class="description">
 
 	<?php extract((array)json_decode(get_option('awesome_settings') ) ); ?>
 				<p class="subtitle">
 					<?php echo stripslashes($Home->date); ?>
 					</p>
-				<h1>Work Awesome</h1>
-				<div class="h1"><img src="<?php echo get_template_directory_uri(); ?>/img/title.png"></div>
+				<h1 style="display:none;">Work Awesome</h1>
+				<img style="width:100%;" src="<?php echo get_template_directory_uri (); ?>/img/logo2.png" alt="workawesome" style="">
+				<div class="h1">
+					
+					<!--<img src="<?php echo get_template_directory_uri(); ?>/img/title.png"></div>-->
 				<p class="subtitle">
 					<?php echo stripslashes($Home->description); ?></p>
 			</div>
