@@ -202,6 +202,17 @@ html {
   color: #22CDD0;
 }
 
+#menu .ticket{
+  background: #e3263f;
+  padding: 4px 13px;
+}
+
+#menu .ticket a{
+  color: white;
+  font-size: 17px;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+}
+
 #home .subtitle a:focus, #home .subtitle a:hover{
   color: #09DEEC;
 }
