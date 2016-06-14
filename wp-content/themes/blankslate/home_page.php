@@ -10,7 +10,10 @@ include('header_blog.php');
 	<div class="fade-layer"></div>
 	<section id="home">
 		<div class="table_cell">
+			<img src="<?php echo get_template_directory_uri (); ?>/img/logo.png" alt="workawesome" style="">
 			<div class="description">
+
+	<?php extract((array)json_decode(get_option('awesome_settings') ) ); ?>
 				<p class="subtitle">
 					<?php echo stripslashes($Home->date); ?>
 					</p>
@@ -19,10 +22,23 @@ include('header_blog.php');
 				<p class="subtitle">
 					<?php echo stripslashes($Home->description); ?></p>
 			</div>
+			<a class="book_now" href="https://www.eventbrite.com/e/work-awesome-tickets-21453749743">BOOK NOW</a>
 		</div>
+
 	</section>
-
-
+</div>
+<div class="container scheduler_container grey">
+	<section id="schedule">
+		<h2><?php echo stripslashes($Scheduler->title); ?></h2>
+		<?php include('schedule.php'); ?>
+	</section>
+</div>
+<div class="container white">
+	<section id="speakers" class="">
+		<h2><?php echo stripslashes($Speakers->title); ?></h2>
+			<?php echo stripslashes($Speakers->description); ?>
+		<?php include('speakers.php'); ?>
+	</section>
 </div>
 <div class="container grey">
 	<section id="contact">
@@ -53,19 +69,6 @@ include('header_blog.php');
 				<?php } ?>
 			</ul>
 		</div>
-	</section>
-</div>
-<div class="container scheduler_container grey">
-	<section id="schedule">
-		<h2><?php echo stripslashes($Scheduler->title); ?></h2>
-		<?php include('schedule.php'); ?>
-	</section>
-</div>
-<div class="container white">
-	<section id="speakers" class="">
-		<h2><?php echo stripslashes($Speakers->title); ?></h2>
-			<?php echo stripslashes($Speakers->description); ?>
-		<?php include('speakers.php'); ?>
 	</section>
 </div>
 <div class="container grey">

@@ -30,7 +30,6 @@
 		</div>
 	</div>
 <div id="container">
-	<?php extract((array)json_decode(get_option('awesome_settings') ) ); ?>
 	<section id="home">
 		<div class="description">
 			<h1><?php echo bloginfo('name'); ?></h1>

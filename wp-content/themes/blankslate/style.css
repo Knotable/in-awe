@@ -198,6 +198,25 @@ html {
   margin-bottom: 0;
 }
 
+#home .subtitle a {
+  color: #22CDD0;
+}
+
+#home .subtitle a:focus, #home .subtitle a:hover{
+  color: #09DEEC;
+}
+
+a.book_now{
+  color:white;
+  text-decoration: none;
+  padding: 14px 24px 18px 24px;
+  background:#e3263f;
+  font-family: 'DINWeb-Cond', sans-serif;
+  margin: 20px auto 0px auto;
+  display: inline-block;
+  font-size: 24px;
+}
+
 body {
   font-family: 'Minion Pro', sans-serif !important;
   line-height: 1.4em;
