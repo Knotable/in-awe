@@ -18,7 +18,7 @@ include('header_blog.php');
 					</p>
 				<h1 style="display:none;">Work Awesome</h1>
 				<img style="width:100%;" src="<?php echo get_template_directory_uri (); ?>/img/logo2.png" alt="workawesome" style="">
-				<div class="h1">
+				<div class="">
 					
 					<!--<img src="<?php echo get_template_directory_uri(); ?>/img/title.png"></div>-->
 				<p class="subtitle">
