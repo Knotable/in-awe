@@ -226,6 +226,7 @@ a.book_now{
   margin: 20px auto 0px auto;
   display: inline-block;
   font-size: 24px;
+  width: 200px;
 }
 
 body {
@@ -929,7 +930,7 @@ section {
   }
 
   #home {
-    padding-top: 0px;
+    padding-top: 80px;
   }
 
   p.subtitle, #home .subtitle {
