@@ -29,12 +29,6 @@ include('header_blog.php');
 
 	</section>
 </div>
-<div class="container scheduler_container grey">
-	<section id="schedule">
-		<h2><?php echo stripslashes($Scheduler->title); ?></h2>
-		<?php include('schedule.php'); ?>
-	</section>
-</div>
 <div class="container white">
 	<section id="speakers" class="">
 		<h2><?php echo stripslashes($Speakers->title); ?></h2>

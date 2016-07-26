@@ -82,4 +82,19 @@ function appthemes_add_quicktags() {
 }
   add_action( 'admin_print_footer_scripts', 'appthemes_add_quicktags' );
 
+//[scheduler]
+function scheduler_func( $atts ){ ?>
+    <div class="container scheduler_container grey">
+        <section id="schedule">
+            <h2><?php echo stripslashes($Scheduler->title); ?></h2>
+            <?php include('schedule.php'); ?>
+        </section>
+    </div>
+        
+    <?php
+    //return "foo and bar";
+    }
+
+add_shortcode( 'scheduler', 'scheduler_func' );
+
 include('inbox_awesome.php');
