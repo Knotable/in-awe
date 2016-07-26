@@ -83,7 +83,9 @@ function appthemes_add_quicktags() {
   add_action( 'admin_print_footer_scripts', 'appthemes_add_quicktags' );
 
 //[scheduler]
-function scheduler_func( $atts ){ ?>
+function scheduler_func( $atts ){ 
+    extract((array)json_decode(get_option('awesome_settings') ) );
+    ?>
     <div class="container scheduler_container grey">
         <section id="schedule">
             <h2><?php echo stripslashes($Scheduler->title); ?></h2>
