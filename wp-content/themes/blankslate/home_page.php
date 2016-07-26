@@ -66,13 +66,6 @@ include('header_blog.php');
 		</div>
 	</section>
 </div>
-<div class="container white">
-	<section id="speakers" class="">
-		<h2><?php echo stripslashes($Speakers->title); ?></h2>
-			<?php echo stripslashes($Speakers->description); ?>
-		<?php include('speakers.php'); ?>
-	</section>
-</div>
 <div class="container grey">
 	<section id="contact">
 		<?php echo stripslashes($Subscribe->text_above); ?>
@@ -81,6 +74,13 @@ include('header_blog.php');
 			<?php echo do_shortcode("[contact-form-7 id='64' title='Subscribe']"); ?>
 		</div>
 		<?php echo stripslashes($Subscribe->text_below); ?>
+	</section>
+</div>
+<div class="container white">
+	<section id="speakers" class="">
+		<h2><?php echo stripslashes($Speakers->title); ?></h2>
+			<?php echo stripslashes($Speakers->description); ?>
+		<?php include('speakers.php'); ?>
 	</section>
 </div>
 <div class="container white">
