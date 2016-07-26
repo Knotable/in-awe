@@ -55,6 +55,17 @@ include('header_blog.php');
 		</div>
 	</section>
 </div>
+<div class="container grey">
+	<section id="features">
+		<h2><?php echo stripslashes($Features->title); ?></h2>
+		<div class="features">
+			<?php include('features.php'); ?>
+		</div>
+		<div class="subscribe_form_button">
+			<a href="https://www.eventbrite.com/e/work-awesome-tickets-21453749743" target="_blank" class="subscribe">Sign up here</a>
+		</div>
+	</section>
+</div>
 <div class="container white">
 	<section id="speakers" class="">
 		<h2><?php echo stripslashes($Speakers->title); ?></h2>
@@ -70,17 +81,6 @@ include('header_blog.php');
 			<?php echo do_shortcode("[contact-form-7 id='64' title='Subscribe']"); ?>
 		</div>
 		<?php echo stripslashes($Subscribe->text_below); ?>
-	</section>
-</div>
-<div class="container grey">
-	<section id="features">
-		<h2><?php echo stripslashes($Features->title); ?></h2>
-		<div class="features">
-			<?php include('features.php'); ?>
-		</div>
-		<div class="subscribe_form_button">
-			<a href="https://www.eventbrite.com/e/work-awesome-tickets-21453749743" target="_blank" class="subscribe">Sign up here</a>
-		</div>
 	</section>
 </div>
 <div class="container white">
