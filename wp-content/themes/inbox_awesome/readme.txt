@@ -6,7 +6,7 @@ If you're creating your own theme/client project open up all files and do a "Fin
 
 - - THEME - -
 
-BlankSlate WordPress Theme
+inbox_awesome WordPress Theme
 Demo: http://wp-themes.com/blankslate/
 Download: http://wordpress.org/themes/blankslate
 
