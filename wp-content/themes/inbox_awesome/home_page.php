@@ -31,7 +31,7 @@ include('header_blog.php');
 </div>
 <div class="container gallery_container grey">
 	<section id="gallery" class="gallery">
-<?php //include('gallery.php'); ?>
+<?php include('gallery.php'); ?>
 	</section>
 </div>
 <div class="container white">
