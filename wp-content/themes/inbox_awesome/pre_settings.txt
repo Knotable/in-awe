@@ -1,0 +1,86 @@
+{"Home":{"date":"October 6th in New York City","description":"
+The anual\\'s conference on the future of email,<\/p>
+
+\u00a0messaging and workflow<\/p>"},"Subscribe":{"text_above":"
+
+Make sure you don\\'t miss our early bird tickets rates and major<\/p>
+
+announcements - use form below to subscribe.<\/p>","text_below":"
+
+It\\'s on! We\\'re excited to announce the<\/p>
+
+4th edition of inbox Awesome<\/p>
+
+Save the date! You\\'re invited to meet key influencers from the email and<\/p>
+
+messaging space in the heart of New York City. Together, we will create a day full<\/p>
+
+of insights, fun and actual bussiness. To learn more about inAwe\\'s previous<\/p>
+
+editions, just keep reading.<\/p>"},"Features":{"title":"Features","first_title":"New old, old new","first_text":"
+
+Are we being pulled away from the inbox by sharing photos on Snapchat, getting work done on Slack and talk family stuff on whatsApp? Or are we entering a renaissance of the new old ? Hear from masters who open their inbox and share how they)<\/p>","second_title":"The shifting streams","second_text":"
+
+Organized, disorganizer. Native or in-app or cross-app. Deep linking. This year we will put a focus on the new trends changing the way users consume messages - encryption, passive events, structured knowledge. As you invent the new UI for your product experience, you\\'ll want to hear what these product designers are thinking. Save your seat for July 9th, all day in New York City - do it now.<\/p>","third_title":"Startups and establihed players","third_text":"
+
+We\\'ll mine our startup nerworks and bring you the big players who are settings the agenda and emerging companies from around New York with fresh ideas about how it\\'s all going to work. Investors and corporates should be there to see what\\'s bubbling up.<\/p>","fourth_title":"Sources and resources","fourth_text":"
+
+Food in your feed, clothes in your cal, wine through Vine - we put a spotlit on the new ways on how we get our stuff, and how we are being followed by our favorite brands along the way. Machine-based personalization, messaging with your doorstep. Learn from the people who run the startups and campaigns that works. Sign up here.<\/p>"},"Venue":{"title":"Our Venue","description":"
+
+This year, we will host you in the heart of New Yor\\'s Garment Disrict, just a block from Times Square. At Stollway, our Unique new venue, you will not only find room to listen and connect, but also the working facility of the world\\'s leading knitting machine manufacturer, Stoll. Don\\'t miss connecting digital and analog crafts and reserve your seat for July 9th here.<\/p>"},"Footer":{"description":"
+
+We are partnerininbox Awesome 2015 was presented by Mailchimp and Knotable.<\/p>
+
+Music was curated by Soundfriend<\/span><\/p>","text1":"Inbox 2014","text2":"Inbox 2013","inbox1":"http://inboxawesome.org/","inbox2":"http://awesomeseries.org/"},"Speakers":{"title":"Past Speakers","description":"
+
+InAwe 2015 brought the most excellent thinkers on the inbox, pictures and words<\/p>
+
+in mail, the zero-interface app trend, the Watch UI, and other<\/p>
+
+places where you want to be<\/p>"},"Partners":{"title":"We are partnering with these amazing companies"},"Scheduler":{"title":"Last year schedule","times":[{"hour":"08:30 AM","title":"Start Up","description":"Presented by Wandering Bear Coffe and Am\\'s Bread music: Andrea Wright"},{"hour":"09:00 AM - 09:20 AM","title":"Inbox Truth","description":"Jeff Jarvis, CUNY"},{"hour":"09:30 AM - 10:15 AM","title":"Simple, Frequent Emails That People Read","description":"Why media is sending out more newsletters than ever and why It\\'s the key to the metrics that matter\r\n\r\n
+
+\r\n
+Nicole Breskin, New York Times, Product<\/li>\r\n
+Simone Oliver, New York Times, Growth<\/li>\r\n
+Rafat Ali, Skift and Paidcontent, founder and CEO<\/li>\r\n
+Millie Tran, BuzzFeed(moderator)<\/li>\r\n<\/ul>"},{"hour":"10:15 AM - 10:45 AM","title":"Emails with only one reader - the big personalization game","description":"
+\r\n
+Nick Edwards, Boomtrain, co-founder and CEO<\/li>\r\n
+Ryan Urban, Bounce Exchange, co-founder and CEO<\/li>\r\n
+Vivek Sharma, MovableInk, co-founder and CEO(moderator)<\/li>\r\n<\/ul>"},{"hour":"10:45 AM - 11:15 AM","title":"Emails that write themeselves - how personal can robots make the inbox?","description":"
+\r\n
+Justin Zhu, Iterable, co-founder and CEO<\/li>\r\n
+David Rowley, Sparkpost from MessageSystems, GM<\/li>\r\n
+Dave Hendricks, LiveIntent, President<\/li>\r\n
+Michael Rothman, Fatherly, founder(moderator)<\/li>\r\n<\/ul>"},{"hour":"11:15 AM","title":"Coffe Break","description":"Music: Andrea Wright"},{"hour":"11:30 AM - 12:15 AM","title":"Your Wrist, the Alert Tray, and Wherever Messages Are Exploding","description":"
+\r\n
+Andrew Phelps, New York Times, Product<\/li>\r\n
+Noah Chestnut, BuzzFeed, Product<\/li>\r\n
+Amol Sarva, Knotable, Peek, Virgin Mobile<\/li>\r\n
+Jim Kim, MLB.com, Product<\/li>\r\n
+Dan Frommer, Quartz, Business Insider(moderator)<\/li>\r\n<\/ul>"},{"hour":"12:15","title":"Lunch","description":"Presented by Savory NYCmusic: Andrea Wright"},{"hour":"12:40 - 1:45 PM","title":"The Food Feed","description":"Junkfood and Junkmail are the past - discovering quality food in you inbox\r\n\r\n
+\r\n
+Sam Sifton, New York Times, Food Editor<\/li>\r\n
+Ben McKean, Hungryroot, co-founder and CEO<\/li>\r\n
+Philip James, Penrose Hill, Lot 18, co-founder<\/li>\r\n
+Borahm Cho, Kitchensurfing, co-founder(moderator)<\/li>\r\n<\/ul>"},{"hour":"01:45 - 02:30 PM","title":"The Zero Interface Inbox","description":"
+\r\n
+Rahul Vohra, Rapportive(LinkedIn), co-founder<\/li>\r\n
+Naveen Selvadurai, Expa, partner, and Foursquare co-founder<\/li>\r\n
+Matt hartmann, Betaworks(moderator)<\/li>\r\n<\/ul>"},{"hour":"02:30 - 03:15 PM","title":"Science and Technology: How to deliver the messages","description":"Ten things we tried + the tools we use to deliver our process\r\n
+\r\n
+Morgan Kazan, DonorsChoose<\/li>\r\n
+Mark O\\'Neill, Thrillist, CTO<\/li>\r\n
+Peter Wang, Refinery29, CTO<\/li>\r\n
+Matt Harris, Sendwithus, co-founder(moderator)<\/li>\r\n<\/ul>\r\n"},{"hour":"03:15 - 03:30 PM","title":"Coffe Break","description":"music: Andrea Wright"},{"hour":"03:30 - 04:15 PM","title":"Inbox E-Commerce","description":"How brands sell to, in, and out of the inbox\r\n
+\r\n
+Steve Schneider, Gilt City, President<\/li>\r\n
+Justin Soffer, Travelzoo, VP<\/li>\r\n
+Galyn Bernard, Primary, co-founder and CEO<\/li>\r\n
+Amanda Hesser, Fodd52, co-founder and CEO(moderator)<\/li>\r\n<\/ul>"},{"hour":"04:15 - 05:00 PM","title":"The Power of the Passionate Solo Brand","description":"How email geniuses amass thousands of subscribers"},{"hour":"05:00 - 05:45 PM","title":"Your physical and emotional inbox","description":"
+\r\n
+Chris Muccioli, Jukely, Kickstarter<\/li>\r\n
+Huan Kuang, Poncho, founder<\/li>\r\n
+John Callan, United States Postal Service, consultant<\/li>\r\n
+Ksenia Chabanenko, My-com and Mall-ru<\/li>\r\n
+Corey Pressman, Cornbread(moderator)<\/li>\r\n\r\n<\/ul>"},{"hour":"05:45 PM","title":"Inbox Afterparty","description":"presented by Union Beer\r\nmusic: Soundfriend"}]}}

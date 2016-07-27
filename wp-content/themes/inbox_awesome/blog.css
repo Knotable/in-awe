@@ -1,0 +1,344 @@
+/*@import url('css/980.css');
+@import url('css/800.css');
+@import url('css/480.css');*/
+
+@font-face {
+  font-family: 'Minion Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/MinionPro-Regular.otf);
+}
+
+@font-face {
+  font-family: 'DINWeb-Cond';
+  font-style: normal;
+  font-weight: 400;
+  src: local('DINWeb-Cond'), url(fonts/DINWeb-Cond.woff) format('woff')
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
+html{margin-bottom: 0;}
+body{
+	background: white;
+	background-size: contain;
+	color: #1B3149;
+	font-family: 'Minion Pro', sans-serif !important;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+#menu li{
+	display: inline-block;
+	padding: 0 10px;
+}
+
+#menu li a{
+	color: #718CA7;
+	text-decoration: none;
+  font-size: 18px;
+}
+
+#menu li{
+	list-style: none;
+}
+
+#home{
+	text-align: center;
+	width: 100%;
+	margin: auto;
+}
+
+p{
+	color: #718CA7;
+  line-height: 1.4em !important;
+  margin: 1.5em 0;
+}
+
+strong,b{
+  font-weight: 700 !important;
+}
+
+em{font-style: italic !important;}
+
+.entry-content img.attachment-post-thumbnail {
+    width: 100%;
+    height: auto;
+    margin: 10px auto 40px auto;
+}
+
+#container{
+	width: 90%;
+	max-width: 600px;
+	margin: auto;
+	position: relative;
+}
+
+.description h1{
+	font-size: 70px;
+}
+
+.entry-content{
+	text-align: justify;
+}
+
+.entry-content a {
+    color: #2064E1 !important;
+    text-decoration: underline !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.description h1{
+		color: #1B3149;
+		font-weight: 500;
+		margin: 30px 0 15px 0;
+		font-family: 'DINWeb-Cond', sans-serif;
+		display: block;
+	}
+}
+
+#head_menu{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 80px;
+    vertical-align: middle;
+    display: table;
+    top: 0;
+}
+
+#head_menu #menu{
+	display: table;
+    width: 500px;
+    font-size: 14px;
+    margin: auto;
+}
+
+#home .description{
+	display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto;
+}
+
+#home .table_cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#container p{
+  word-spacing: 3px;
+}
+
+.menu_contain{
+    width: 400px;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #5C6B72;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #5C6B72;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #5C6B72;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #5C6B72;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color:    #5C6B72;
+}
+
+#container h2{
+	font-size: 26px;
+    text-align: left;
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+article.post {
+    margin: 50px 0;
+}
+.entry-footer{
+	margin: 30px 0;
+}
+.post-edit-link{
+	 margin: 20px 0;
+    display: block;
+}
+.entry-meta{
+	margin-bottom: 30px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.cell{
+	/*display: table-cell;*/
+}
+
+.row{
+	display: table-row;
+}
+
+section{
+    margin: auto;
+}
+
+.blank_space{
+	height: 180px;
+}
+
+#footer{
+	padding: 50px 0;
+}
+
+#footer p span{
+	color:#6695FB;
+}
+
+#footer p.copy {
+	margin:30px auto 10px auto
+}
+
+#footer p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.socialnetworks{
+	display: table;
+	width: 150px;
+	margin: 20px auto;
+}
+
+.socialnetworks a {
+	height: 20px;
+	width: 20px;
+	background: url(img/networks.png) no-repeat;
+	display: block;
+    margin: auto;
+}
+
+.socialnetworks .cell{display: table-cell;}
+.socialnetworks a.facebook{}
+.socialnetworks a.twitter{background-position: -45px 0;}
+.socialnetworks a.instagram{background-position: -92px 0;}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 800px) {
+
+	#home{
+		padding-top: 0px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#head_menu #menu{
+		width: 100%;
+	}
+
+	.description h1{
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.description h1{
+		font-size: 40px;
+	}
+}
+
+#schedule,
+#speakers,
+#features,
+#partnering {
+  width: 100%;
+  overflow: auto;
+  padding: 92px 0;
+}
+
+#partnering {
+  padding-bottom: 175px
+}
+
+#schedule .hour {
+  width: 40%;
+  float: left;
+  text-align: right;
+  padding: 0 50px 20px 50px;
+}
+
+#schedule .activities span {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+  background: url(img/point.png) no-repeat;
+  background-position: 0px 0px;
+  padding: 0 48px;
+  margin-left: -48px;
+}
+
+#schedule .activities {
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding: 0px 35px 20px 35px;
+  border-left: 5px solid #294563;
+  background: url(img/bgline.png) no-repeat;
+  background-position: 0px 0px;
+}
+
+.activities p {
+  color: #718CA7;
+  text-align: left;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+@media screen and (max-width:800px) {
+    #schedule .hour {
+    width: 100%;
+    text-align: left;
+    background: url(img/point.png) no-repeat;
+    background-position: 15px;
+  }
+
+  #schedule .activities {
+    width: 100%;
+    text-align: justify;
+    margin-left: 41px;
+    padding-left: 10px;
+    border: none;
+  }
+
+  #schedule .activities span {
+    background: none;
+  }
+
+  #schedule,
+  #speakers,
+  #features,
+  #partnering {
+    padding: 62px 0
+  }
+}
