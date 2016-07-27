@@ -21,7 +21,7 @@
 		<div class="menu_contain">
 			<ul id="menu">
 				<li><a href="/#home">Home</a></li>
-				<li><a href="#speakers">InAwe 2015</a></li>
+				<li><a href="http://2015.inboxawesome.org">InAwe 2015</a></li>
 				<li><a href="https://inboxawesome.splashthat.com">InAwe 2014</a></li>
 				<li><a href="http://2013.inboxawesome.org">InAwe 2013</a></li>
 				<li><a href="mailto:​felix@workawesome.org,lars@workawesome.org?​subject=Work%20Awesome%20-%20I'd%20like%20to%20be%20involved">Contact</a></li>
