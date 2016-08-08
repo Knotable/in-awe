@@ -42,6 +42,23 @@ include('header_blog.php');
 	</section>
 </div>
 <div class="container white">
+	<section id="schedule" class="">
+		<?php
+		if(isset($Scheduler->times)){
+			foreach($Scheduler->times as $key => $value){ ?>
+				<div class="scheduler">
+					<div class="hour"><?php echo $value->hour; ?></div>
+					<div class="activities">
+						<span><?php echo $value->title; ?></span>
+						<p class="mini_blue"><?php echo stripslashes($value->description); ?></p>
+					</div>
+				</div>
+			<?php }
+		}
+		?>
+	</section>
+</div>
+<div class="container white">
 	<section id="partnering" class="">
 		<h2><?php echo stripslashes($Partners->title); ?></h2>
 		<div class="partners">
