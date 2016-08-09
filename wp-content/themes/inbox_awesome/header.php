@@ -35,6 +35,6 @@
 <div id="container">
 	<section id="home">
 		<div class="description">
-			<h1><?php echo bloginfo('name'); ?></h1>
+			<img style="width:200px;margin:auto;" title="<?php echo bloginfo('name'); ?>" src="<?php echo get_template_directory_uri()."/img/inbox.png"?>">
 		</div>
 	</section>

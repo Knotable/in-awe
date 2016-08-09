@@ -29,11 +29,6 @@ include('header_blog.php');
 
 	</section>
 </div>
-<div class="container gallery_container grey">
-	<section id="gallery" class="gallery">
-<?php include('gallery.php'); ?>
-	</section>
-</div>
 <div class="container white">
 	<section id="speakers" class="">
 		<h2><?php echo stripslashes($Speakers->title); ?></h2>

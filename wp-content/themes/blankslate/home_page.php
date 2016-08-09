@@ -19,14 +19,12 @@ include('header_blog.php');
 				<h1 style="display:none;">Work Awesome</h1>
 				<img style="width:100%;" src="<?php echo get_template_directory_uri (); ?>/img/logo2.png" alt="workawesome" style="">
 				<div class="">
-					
 					<!--<img src="<?php echo get_template_directory_uri(); ?>/img/title.png"></div>-->
 				<p class="subtitle">
 					<?php echo stripslashes($Home->description); ?></p>
 			</div>
 			<a class="book_now" href="https://www.eventbrite.com/e/work-awesome-tickets-21453749743">BOOK NOW</a>
 		</div>
-
 	</section>
 </div>
 <div class="container gallery_container grey">
@@ -81,6 +79,23 @@ include('header_blog.php');
 		<h2><?php echo stripslashes($Speakers->title); ?></h2>
 			<?php echo stripslashes($Speakers->description); ?>
 		<?php include('speakers.php'); ?>
+	</section>
+</div>
+<div class="container white">
+	<section id="schedule" class="">
+		<?php
+		if(isset($Scheduler->times)){
+			foreach($Scheduler->times as $key => $value){ ?>
+				<div class="scheduler">
+					<div class="hour"><?php echo $value->hour; ?></div>
+					<div class="activities">
+						<span><?php echo $value->title; ?></span>
+						<p class="mini_blue"><?php echo stripslashes($value->description); ?></p>
+					</div>
+				</div>
+			<?php }
+		}
+		?>
 	</section>
 </div>
 <div class="container white">
