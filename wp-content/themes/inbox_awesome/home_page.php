@@ -27,11 +27,6 @@ include('header_blog.php');
 		</div>
 	</section>
 </div>
-<div class="container gallery_container grey">
-	<section id="gallery" class="gallery">
-<?php include('gallery.php'); ?>
-	</section>
-</div>
 <div class="container white">
 	<section id="slider" class="">
 		<div class="experience">
