@@ -68,8 +68,8 @@ em{font-style: italic !important;}
 }
 
 #container{
-	width: 90%;
-	max-width: 600px;
+	/*width: 90%;
+	max-width: 600px;*/
 	margin: auto;
 	position: relative;
 }

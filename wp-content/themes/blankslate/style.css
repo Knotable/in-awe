@@ -336,11 +336,125 @@ p {
   top: 0px;
 }
 
+.body{
+  width: 80%;
+  background:#fff;
+  margin: auto;
+  overflow: auto;
+}
+
+.type-post h1{
+  font-size: 25px;
+}
+
+.articles{
+    padding: 50px 15px;
+    box-sizing: border-box;
+}
+
+#container2{
+  background: #F5F5F5;
+  width: 100%;
+}
+
+.entry-content img.attachment-post-thumbnail {
+    width: 100%;
+    height: auto;
+    margin: 10px auto 40px auto;
+}
+
+.entry-content{
+  text-align: justify;
+}
+
+.entry-content a {
+    color: #2064E1 !important;
+    text-decoration: underline !important;
+}
 .fade-layer {
   background: #7B7F75;
   opacity: 0.5;
 }
 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+article.post {
+    margin: 50px 0;
+}
+
+section {
+    margin: auto;
+}
+
+#container p {
+    word-spacing: 3px;
+}
+
+.entry-meta {
+    margin-bottom: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#container p {
+    word-spacing: 3px;
+    color: #718CA7;
+    line-height: 1.4em !important;
+    margin: 1.5em 0;
+}
+
+.widget-area > :last-child, .widget-container > :last-child {
+    margin-bottom: 0;
+}
+
+p {
+
+}
+
+@media screen and (min-width: 56.875em)
+  .widget-container {
+      font-size: 13px;
+      font-size: 0.8125rem;
+      line-height: 1.6153846154;
+      margin-bottom: 3.230769231em;
+      padding-top: 1.615384615em;
+  }
+
+  .widget-container .widget-title {
+    margin-bottom: 1.3125em;
+  }
+
+  .sidebar {
+    margin-top: 5.25em;
+  }
+}
+
+ul, ol {
+    margin: 0 0 1.75em 1.25em;
+    padding: 0;
+}
+
+.widget-container .widget-title {
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    letter-spacing: 0.046875em;
+    line-height: 1.3125;
+    margin: 0 0 1.75em;
+    text-transform: uppercase;
+}
+
+.widget-container {
+    border-top: 4px solid #1a1a1a;
+    margin-bottom: 3.5em;
+    padding-top: 1.75em;
+}
+
+section {
+    margin: auto;
+}
 .bg-main {
   background: #1b3149 url(img/background_2.jpg) no-repeat;
   background-size: cover;
