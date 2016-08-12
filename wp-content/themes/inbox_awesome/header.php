@@ -39,7 +39,7 @@
 						<?php //echo stripslashes($Home->date); ?>
 						</p>
 					<h1 style="display:none;">Work Awesome</h1>
-					<img style="width:100%;" src="<?php echo get_template_directory_uri (); ?>/img/logo2.png" alt="workawesome" style="">
+					<img style="width:100%;" src="<?php echo get_template_directory_uri (); ?>/img/logo.png" alt="workawesome" style="">
 					<div class="">
 					<p class="subtitle">
 						The Work Awesome Blog
