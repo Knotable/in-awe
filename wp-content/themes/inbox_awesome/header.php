@@ -38,11 +38,11 @@
 					<p class="subtitle">
 						<?php //echo stripslashes($Home->date); ?>
 						</p>
-					<h1 style="display:none;">Work Awesome</h1>
+					<h1 style="display:none;">Inbox Awesome</h1>
 					<img style="width:100%;" src="<?php echo get_template_directory_uri (); ?>/img/logo.png" alt="workawesome" style="">
 					<div class="">
 					<p class="subtitle">
-						The Work Awesome Blog
+						The Inbox Awesome Blog
 					</p>
 				</div>
 					<!-- 				<a class="book_now" href="https://www.eventbrite.com/e/work-awesome-tickets-21453749743">BOOK NOW</a> -->
