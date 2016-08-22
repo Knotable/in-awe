@@ -23,7 +23,7 @@ include('header_blog.php');
 				<p class="subtitle">
 					<?php echo stripslashes($Home->description); ?></p>
 			</div>
-			<a class="book_now" href="https://www.eventbrite.com/e/work-awesome-tickets-21453749743">BOOK NOW</a>
+			<a class="book_now" href="https://www.eventbrite.com/e/inbox-awesome-the-future-of-email-messaging-notifications-and-workflows-tickets-27225799098">BOOK NOW</a>
 		</div>
 	</section>
 </div>
@@ -54,8 +54,9 @@ include('header_blog.php');
 		<div class="features">
 			<?php include('features.php'); ?>
 		</div>
+		<div style="clear:both;"></div>
 		<div class="subscribe_form_button">
-			<a href="https://www.eventbrite.com/e/work-awesome-tickets-21453749743" target="_blank" class="subscribe">Sign up here</a>
+			<a href="https://www.eventbrite.com/e/inbox-awesome-the-future-of-email-messaging-notifications-and-workflows-tickets-27225799098" target="_blank" class="subscribe">Sign up here</a>
 		</div>
 	</section>
 </div>
@@ -78,6 +79,7 @@ include('header_blog.php');
 </div>
 <div class="container white">
 	<section id="schedule" class="">
+		<h2><?php echo stripslashes($Scheduler->title); ?></h2>
 		<?php
 		if(isset($Scheduler->times)){
 			foreach($Scheduler->times as $key => $value){ ?>

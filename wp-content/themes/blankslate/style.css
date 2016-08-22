@@ -810,19 +810,30 @@ section {
 }
 
 .features {
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
+  /*-webkit-column-count: 2;
+  -moz-column-count: 2; 
   column-count: 2;
-  -webkit-column-gap: 1; /* Chrome, Safari, Opera */
-  -moz-column-gap: 1; /* Firefox */
-  column-gap: 1;
+  -webkit-column-gap: 1;
+  -moz-column-gap: 1;
+  column-gap: 1;*/
   text-align: center;
+  display: table;
+}
+
+#features .column_feature{
+
+}
+
+#features .row_feature{
+  display: table-row;
 }
 
 .feature {
-  width: 90%;
+  width: 50%;
   margin: auto;
-  height: 350px;
+  /*height: 350px;*/
+  display: table-cell;
+  padding: 0 14px;
 }
 
 .feature p.title {

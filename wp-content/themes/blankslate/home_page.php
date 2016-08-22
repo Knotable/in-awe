@@ -83,6 +83,7 @@ include('header_blog.php');
 </div>
 <div class="container white">
 	<section id="schedule" class="">
+		<h2><?php echo stripslashes($Scheduler->title); ?></h2>
 		<?php
 		if(isset($Scheduler->times)){
 			foreach($Scheduler->times as $key => $value){ ?>
