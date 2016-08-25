@@ -404,7 +404,11 @@ section {
     word-spacing: 3px;
     color: #718CA7;
     line-height: 1.4em !important;
-    margin: 1.5em 0;
+    margin: 1.5em 0 0 0;
+}
+
+.speakers_content p.company {
+    margin: 5px 0 0 0 !important;
 }
 
 .widget-area > :last-child, .widget-container > :last-child {
@@ -458,7 +462,7 @@ section {
     margin: auto;
 }
 .bg-main {
-  background: #1b3149 url(img/background_pizarra.jpg) no-repeat;
+  background: #1b3149 url(img/background_pizarra2.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -530,6 +534,10 @@ span.wpcf7-not-valid-tip {
   line-height: 1em !important;
   letter-spacing: 0.06em;
   color: #fff;
+}
+
+#container p.company {
+
 }
 
 #container p {
