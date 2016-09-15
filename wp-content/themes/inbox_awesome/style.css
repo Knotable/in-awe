@@ -1066,7 +1066,7 @@ section {
 @media screen and (min-width:880px) {
   .speakers_content {
     /* display: table; */
-    width: 100%;
+    width: 916px !important;
     min-width: 650px;
   }
 }
