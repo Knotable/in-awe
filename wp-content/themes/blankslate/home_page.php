@@ -23,6 +23,7 @@ include('header_blog.php');
 				<p class="subtitle">
 					<?php echo stripslashes($Home->description); ?></p>
 			</div>
+			<!--<a class="book_now" href="https://www.eventbrite.com/e/work-awesome-tickets-21453749743">Join the newsletter for what´s next!</a> -->
 			<a class="book_now" href="https://www.eventbrite.com/e/work-awesome-tickets-21453749743">BOOK NOW</a>
 		</div>
 	</section>
@@ -30,38 +31,6 @@ include('header_blog.php');
 <div class="container gallery_container grey">
 	<section id="gallery" class="gallery">
 <?php include('gallery.php'); ?>
-	</section>
-</div>
-<div class="container white">
-	<section id="slider" class="">
-		<div class="experience">
-			<ul class="bxslider">
-			<?php
-				$testimonials = get_posts(array(
-						'post_type'   => 'testimonials',
-						'numberposts' => -1
-					));
-
-				foreach($testimonials as $testimonial){ ?>
-					<li>
-						<h3><?php echo $testimonial->post_title; ?></h3>
-						<span><?php echo get_post_meta($testimonial->ID, 'Company', true); ?></span>
-						<p class="comment"><?php echo $testimonial->post_content; ?></p>
-					</li>
-				<?php } ?>
-			</ul>
-		</div>
-	</section>
-</div>
-<div class="container grey">
-	<section id="features">
-		<h2><?php echo stripslashes($Features->title); ?></h2>
-		<div class="features">
-			<?php include('features.php'); ?>
-		</div>
-		<div class="subscribe_form_button">
-			<a href="https://www.eventbrite.com/e/work-awesome-tickets-21453749743" target="_blank" class="subscribe">Sign up here</a>
-		</div>
 	</section>
 </div>
 <div class="container grey">
