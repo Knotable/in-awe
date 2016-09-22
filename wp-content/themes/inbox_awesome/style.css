@@ -1,5 +1,5 @@
 /*
-Theme Name: BlankSlate
+Theme Name: InboxAwesome
 Theme URI: http://wordpress.org/themes/blankslate
 Author: TidyThemes
 Author URI: http://tidythemes.com/
@@ -799,6 +799,7 @@ p.subtitle {
   padding-bottom: 32px;
   margin: 0 5px 12px 5px;
   float: left;
+  width: 200px;
   /*width: 22%;*/
   height: 358px;
 }
