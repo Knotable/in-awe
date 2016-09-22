@@ -12,7 +12,9 @@
                 <?php
                   foreach( $json['slides'] as $image => $slide){ ?>
                   <li>
-                    <img src="<?php echo $slide['image']; ?>" width="691" alt="The full Functional">
+                    <div class="carrousel-img-div" style="background: url(<?php echo $slide['image']; ?> );">
+                    </div>
+                    <img style="display: none;" src="<?php echo $slide['image']; ?>" width="" alt="The full Functional">
                   </li> 
                 <?php } ?>
                 <li><img src="../_shared/img/img1.jpg"  alt=""></li>
@@ -22,8 +24,8 @@
         <a href="#" class="next next-stage" data-jcarouselcontrol="true"><span></span></a>
     </div>
     <div class="navigation">
-        <!--<a href="#" class="prev prev-navigation inactive" data-jcarouselcontrol="true">‹</a>
-        <a href="#" class="next next-navigation" data-jcarouselcontrol="true">›</a>-->
+        <a href="#" class="prev prev-navigation inactive" data-jcarouselcontrol="true">‹</a>
+        <a href="#" class="next next-navigation" data-jcarouselcontrol="true">›</a>
         <div class="carousel carousel-navigation" data-jcarousel="true">
             <ul style="left: 0px; top: 0px;">
                 <?php
@@ -59,14 +61,26 @@
                 var carousel = $(this),
                     width = carousel.innerWidth();
                     width = $( window ).width();
-                    if(width <= 800){
+
+                    /*if(width <= 800){
                         width = (width * 80)/100;
                         console.log(width);
                         
                     }else
+                        width = 620;*/
+
+                    if(width >= 620){
                         width = 620;
+                    }else{
+                        if(width >= 500){
+                            width = 500;
+                        }else{
+                            width = 400;
+                        }
+                    }
 
                     carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+                    //$('div.carrousel-img-div').css('width', Math.ceil(width) + 'px');
                     
             })
             .jcarousel({
