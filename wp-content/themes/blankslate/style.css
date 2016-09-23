@@ -746,8 +746,8 @@ p.subtitle {
 .radius_image {
   border-radius: 50%;
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   overflow: hidden;
   margin: 0 auto 24px;
   background: red;
@@ -756,7 +756,7 @@ p.subtitle {
 }
 
 .radius_image img {
-  min-width: 100%;
+  width: 100%;
   min-height: 100%;
 }
 
