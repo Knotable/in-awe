@@ -1200,6 +1200,10 @@ section {
     margin: 0 4% 12px 1%;
     height: 365px;
   }
+
+  .features, #features .row_feature{
+    display: block;
+  }
 }
 
 @media screen and (max-width:640px) {

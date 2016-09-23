@@ -1196,6 +1196,10 @@ section {
     /* display: table; */
     width: 636px;
   }
+
+  .features, #features .row_feature{
+    display: block;
+  }
 }
 
 @media screen and (max-width:680px) {
