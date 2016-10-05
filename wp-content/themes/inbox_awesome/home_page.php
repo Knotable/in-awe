@@ -28,39 +28,6 @@ include('header_blog.php');
 	</section>
 </div>
 <div class="container white">
-	<section id="slider" class="">
-		<div class="experience">
-			<ul class="bxslider">
-			<?php
-				$testimonials = get_posts(array(
-						'post_type'   => 'testimonials',
-						'numberposts' => -1
-					));
-
-				foreach($testimonials as $testimonial){ ?>
-					<li>
-						<h3><?php echo $testimonial->post_title; ?></h3>
-						<span><?php echo get_post_meta($testimonial->ID, 'Company', true); ?></span>
-						<p class="comment"><?php echo $testimonial->post_content; ?></p>
-					</li>
-				<?php } ?>
-			</ul>
-		</div>
-	</section>
-</div>
-<div class="container grey">
-	<section id="features">
-		<h2><?php echo stripslashes($Features->title); ?></h2>
-		<div class="features">
-			<?php include('features.php'); ?>
-		</div>
-		<div style="clear:both;"></div>
-		<div class="subscribe_form_button">
-			<a href="https://www.eventbrite.com/e/inbox-awesome-the-future-of-email-messaging-notifications-and-workflows-tickets-27225799098" target="_blank" class="subscribe">Sign up here</a>
-		</div>
-	</section>
-</div>
-<div class="container white">
 	<section id="speakers" class="">
 		<h2><?php echo stripslashes($Speakers->title); ?></h2>
 			<?php echo stripslashes($Speakers->description); ?>
@@ -124,6 +91,39 @@ include('header_blog.php');
 			}
 
 			?>
+		</div>
+	</section>
+</div>
+<div class="container white">
+	<section id="slider" class="">
+		<div class="experience">
+			<ul class="bxslider">
+			<?php
+				$testimonials = get_posts(array(
+						'post_type'   => 'testimonials',
+						'numberposts' => -1
+					));
+
+				foreach($testimonials as $testimonial){ ?>
+					<li>
+						<h3><?php echo $testimonial->post_title; ?></h3>
+						<span><?php echo get_post_meta($testimonial->ID, 'Company', true); ?></span>
+						<p class="comment"><?php echo $testimonial->post_content; ?></p>
+					</li>
+				<?php } ?>
+			</ul>
+		</div>
+	</section>
+</div>
+<div class="container grey">
+	<section id="features">
+		<h2><?php echo stripslashes($Features->title); ?></h2>
+		<div class="features">
+			<?php include('features.php'); ?>
+		</div>
+		<div style="clear:both;"></div>
+		<div class="subscribe_form_button">
+			<a href="https://www.eventbrite.com/e/inbox-awesome-the-future-of-email-messaging-notifications-and-workflows-tickets-27225799098" target="_blank" class="subscribe">Sign up here</a>
 		</div>
 	</section>
 </div>
