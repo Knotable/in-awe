@@ -763,6 +763,8 @@ p.subtitle {
 .speakers_content p.name {
   color: #324259;
   font-size: 16px !important;
+  line-height: 0.7em !important;
+  margin-top: 0.5em !important;
 }
 
 .speakers_content p.company {
