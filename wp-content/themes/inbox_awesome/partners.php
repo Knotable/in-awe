@@ -1,16 +1,28 @@
 <?php
 
 function partners_categories($title, $id){ ?>
-  <h2><?php echo $title; ?></h2>
+  <?php 
+    $partners_logo = get_posts(array(
+        'post_type'   => 'partners',
+        'numberposts' => -1,
+        'category' => $id
+      ));
+    if( count($partners_logo)  == 0) return true;
+  ?>
+
+  <h2><?php echo $title; ?> 
+    <?php if($title == 'Gold – Presenting Partner'){ ?>
+      <img width='32' src='<?php echo get_template_directory_uri();?>/img/gold.png' />
+    <?php } ?>
+    <?php if($title == 'Silver – Supporting Partner'){ ?>
+      <img width='32' src='<?php echo get_template_directory_uri();?>/img/silver.png' />
+    <?php } ?>
+    <?php if($title == 'Bronze – Swag Partner'){ ?>
+      <img width='32' src='<?php echo get_template_directory_uri();?>/img/bronze.png' />
+    <?php } ?>
+  </h2>
   <div class="partners">
     <?php
-    $partners_logo = get_posts(array(
-          'post_type'   => 'partners',
-          'numberposts' => -1,
-          'category' => $id
-        ));
-
-
     $partner_group = 1;
     $count = 0;
     foreach($partners_logo as $key => $partner){
@@ -44,6 +56,12 @@ function partners_categories($title, $id){ ?>
   </div>
 <?php }
 
-partners_categories('', 0); 
+partners_categories('Gold – Presenting Partner', 7); 
+partners_categories('Silver – Supporting Partner', 8); 
+partners_categories('Bronze – Swag Partner', 9); 
+partners_categories('Media Partner', 10); 
+partners_categories('Educational Partner', 11); 
+partners_categories('Hospitality Partner', 12); 
+//partners_categories('', 0); 
 
 ?>
