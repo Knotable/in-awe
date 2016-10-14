@@ -31,7 +31,7 @@ This year, we will host you in the heart of New Yor\\'s Garment Disrict, just a 
 
 We are partnerininbox Awesome 2015 was presented by Mailchimp and Knotable.<\/p>
 
-Music was curated by Soundfriend<\/span><\/p>","text1":"Inbox 2014","text2":"Inbox 2013","inbox1":"http://inboxawesome.org/","inbox2":"http://awesomeseries.org/"},"Speakers":{"title":"Past Speakers","description":"
+Music was curated by Soundfriend<\/span><\/p>","text1":"Inbox 2014","text2":"Inbox 2013","inbox1":"http://inboxawesome.org/","inbox2":"http://awesomeseries.org/"},"YourHost":{"title":"Your Hosts", "description": ""}, "Speakers":{"title":"Past Speakers","description":"
 
 InAwe 2015 brought the most excellent thinkers on the inbox, pictures and words<\/p>
 

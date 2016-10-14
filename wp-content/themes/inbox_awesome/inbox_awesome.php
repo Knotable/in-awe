@@ -20,6 +20,26 @@ function create_speakers() {
   );
 }
 
+add_action( 'init', 'create_inbox_hosts' );
+function create_inbox_hosts() {
+  register_post_type('inbox_hosts',
+    array(
+      'labels' => array(
+        'name' => __( 'Your Hosts' ),
+        'singular_name' => __( 'Host' ),
+        'add_new_item' => 'Add New'
+      ),
+      'public' => true,
+      'supports' => array(
+        'thumbnail',
+        'title',
+        'editor',
+        'custom-fields'
+        )
+    )
+  );
+}
+
 add_action( 'init', 'create_partners' );
 function create_partners() {
   register_post_type('partners',

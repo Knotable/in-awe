@@ -22,6 +22,7 @@
 			<li><a href="#our_venue">Our venue page</a></li>
 			<li><a href="#footer">Footer page</a></li>
 			<li><a href="#past">Past speakers page</a></li>
+			<li><a href="#your_hosts">Your hosts page</a></li>
 			<li><a href="#partners">Partners page</a></li>
 			<li><a href="#scheduler">Scheduler page</a></li>
 		</ul>
@@ -137,6 +138,19 @@
 					<h2>Description</h2>
 					<div id="<?php echo user_can_richedit() ? 'postdivrich' : 'postdiv'; ?>" class="postarea"><?php wp_editor(stripslashes($Speakers->description), 'speakers_description', array(
 							'textarea_name' => 'AwesomeSettings[Speakers][description]',
+							'textarea_rows' => 5
+						) ); ?>
+					</div>
+				</div>
+		</div>
+		<div id="your_hosts" class="element">
+			<h1>Your hosts page</h1>
+				<div id="poststuff">
+					<h2>Title</h2>
+					<input type="text" value="<?php echo stripslashes($YourHost->title); ?>" name="AwesomeSettings[YourHost][title]">
+					<h2>Description</h2>
+					<div id="<?php echo user_can_richedit() ? 'postdivrich' : 'postdiv'; ?>" class="postarea"><?php wp_editor(stripslashes($YourHost->description), 'yourhost_description', array(
+							'textarea_name' => 'AwesomeSettings[YourHost][description]',
 							'textarea_rows' => 5
 						) ); ?>
 					</div>

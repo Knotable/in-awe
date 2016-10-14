@@ -1,5 +1,4 @@
 <?php
-
 function partners_categories($title, $id){ ?>
   <?php 
     $partners_logo = get_posts(array(

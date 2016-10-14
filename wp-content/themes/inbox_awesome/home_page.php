@@ -91,6 +91,15 @@ include('header_blog.php');
 		</div>
 	</section>
 </div>
+<div class="container white blank_space"></div>
+<div class="container white">
+	<section id="your_hosts" class="">
+		<h2><?php echo stripslashes($YourHost->title); ?></h2>
+			<?php echo stripslashes($YourHost->description); ?>
+		<?php include('your_hosts.php'); ?>
+	</section>
+</div>
+<div class="container white blank_space"></div>
 <div class="container grey">
 	<img class="venue_image" src="<?php echo get_template_directory_uri(); ?>/img/venue1.jpg" />
 	<section id="venue">
