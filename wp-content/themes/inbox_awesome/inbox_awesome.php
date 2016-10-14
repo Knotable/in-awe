@@ -35,7 +35,8 @@ function create_partners() {
         'title',
         'editor',
         'custom-fields'
-        )
+        ),
+      'taxonomies'  => array( 'category' )
     )
   );
 }
