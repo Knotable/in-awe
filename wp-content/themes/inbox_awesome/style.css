@@ -1052,6 +1052,11 @@ section {
   list-style: disc;
 }
 
+#container h2.partner_sub{
+  font-size: 20px;
+  margin: 0px auto 20px;
+}
+
 /*@media screen and (min-width: 480px) {
   .venue{
     width: 40%;

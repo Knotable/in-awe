@@ -9,7 +9,7 @@ function partners_categories($title, $id){ ?>
     if( count($partners_logo)  == 0) return true;
   ?>
 
-  <h2><?php echo $title; ?> 
+  <h2 class="partner_sub"><?php echo $title; ?> 
     <?php if($title == 'Gold – Presenting Partner'){ ?>
       <img width='32' src='<?php echo get_template_directory_uri();?>/img/gold.png' />
     <?php } ?>
