@@ -29,6 +29,7 @@ include('header_blog.php');
 </div>
 <div class="container white">
 	<section id="speakers" class="">
+	<div class="container white blank_space"></div>
 		<h2><?php echo stripslashes($Speakers->title); ?></h2>
 			<?php echo stripslashes($Speakers->description); ?>
 		<?php include('speakers.php'); ?>
@@ -36,6 +37,7 @@ include('header_blog.php');
 </div>
 <div class="container white">
 	<section id="schedule" class="">
+	<div class="container white blank_space"></div>
 		<h2><?php echo stripslashes($Scheduler->title); ?></h2>
 		<?php
 		if(isset($Scheduler->times)){
@@ -54,6 +56,7 @@ include('header_blog.php');
 </div>
 <div class="container white">
 	<section id="partnering" class="">
+	<div class="container white blank_space"></div>
 		<h2><?php echo stripslashes($Partners->title); ?></h2>
 		<?php include('partners.php'); ?>
 	</section>
@@ -120,7 +123,6 @@ include('header_blog.php');
 		<?php echo stripslashes($Subscribe->text_below); ?>
 	</section>
 </div>
-<div class="container white blank_space"></div>
 <div class="container inboxing white">
 	<div class="inbox cator">
 		<a href="<?php echo stripslashes($Footer->inbox1); ?>" target="_blank">

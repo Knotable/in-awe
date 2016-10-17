@@ -679,6 +679,9 @@ a.subscribe,
 #partnering {
   width: 100%;
   overflow: auto;
+  /*padding: 92px 0;*/
+}
+#features{
   padding: 92px 0;
 }
 
@@ -1198,6 +1201,9 @@ section {
     width: 636px;
   }
 
+  #your_hosts .speakers_content {
+    width: 636px !important;
+  }
 }
 
 @media screen and (max-width:680px) {
@@ -1215,6 +1221,10 @@ section {
 
   .features, #features .row_feature{
     display: block;
+  }
+
+  #your_hosts .speakers_content {
+    min-width: 350px;
   }
 }
 
