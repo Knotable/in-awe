@@ -966,12 +966,24 @@ section {
 }
 
 .inbox.tres {
-  background: #1b3149 url(img/inbox2013.png) no-repeat;
+  background: #1b3149 url(img/awesome.jpg) no-repeat;
   background-size: cover;
 }
 
 .inbox.cator {
-  background: #1b3149 url(img/inbox2014.png) no-repeat;
+  background: #1b3149 url(img/workawesome.jpg) no-repeat;
+  background-size: cover;
+}
+.inbox.in2015 {
+  background: #1b3149 url(img/inawe2015.jpg) no-repeat;
+  background-size: cover;
+}
+.inbox.in2014 {
+  background: #1b3149 url(img/inawe2014.jpg) no-repeat;
+  background-size: cover;
+}
+.inbox.in2013 {
+  background: #1b3149 url(img/inawe2013.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -1247,6 +1259,9 @@ section {
   .feature{
     width: 90%;
     float: none;
+  }
+  .inbox {
+    width: 100%;
   }
 
 }
