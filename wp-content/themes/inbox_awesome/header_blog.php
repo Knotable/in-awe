@@ -21,7 +21,7 @@
 		<div class="menu_contain">
 			<ul id="menu">
 				<li><a href="/home">Home</a></li>
-				<li><a href="/blog">Blog</a></li>
+				<li><a href="https://livestream.com/internetsociety/inawe16">Livestream</a></li>
 				<li><a href="/#schedule">Schedule</a></li>
 				<li><a href="/#speakers">Speakers</a></li>
 				<li class="ticket"><a href="https://www.eventbrite.com/e/inbox-awesome-the-future-of-email-messaging-notifications-and-workflows-tickets-27225799098" target="_blank">Tickets</a></li>
